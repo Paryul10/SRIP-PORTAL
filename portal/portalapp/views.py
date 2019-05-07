@@ -1,8 +1,10 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from .models import Student
+from django.http import HttpResponseRedirect
+from .models import Student,LoggedIssue
 from django.contrib.auth.models import User
 from django.contrib.auth import views as auth_views
+from .forms import IssueForm
 
 # Create your views here.
 def index(request):
@@ -27,4 +29,38 @@ def displaypoints(request,username):
 def passwordreset(request):
     return render(request,'registration/passwordreset.html')
 
-    
+# def logissue(request):
+#     form = IssueForm()
+#     return render(request,'portalapp/logissue.html',{'form':form})
+
+
+def logissue(request):
+    # if this is a POST request we need to process the form data
+    if request.method == 'POST':
+        # create a form instance and populate it with data from the request:
+        form = IssueForm(request.POST)
+        # check whether it's valid:
+        if form.is_valid():
+            cleaned_data = form.cleaned_data
+            # print(cleaned_data)            
+            commit_id_form = cleaned_data.get('commit_id')
+            url_form = cleaned_data.get('url')
+            obj = LoggedIssue(username=request.user.username,commit_id=commit_id_form,url=url_form)
+            try:
+                obj.save()
+            except:
+                return HttpResponse('Already Existing Commit! Please resubmit with proper commit id')
+
+            # process the data in form.cleaned_data as required
+            # ...
+            # redirect to a new URL:
+            return HttpResponseRedirect('/')
+
+    # if a GET (or any other method) we'll create a blank form
+    else:
+        form = IssueForm()
+        return render(request,'portalapp/logissue.html',{'form':form})
+
+    # return render(request, 'issue.html', {'form': form})
+
+    # 521747298a3790fde1710f3aa2d03b55020575aa

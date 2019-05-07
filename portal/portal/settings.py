@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'portalapp',
+    'bootstrap3',
+    # 'bootstrap_css',
 ]
 
 MIDDLEWARE = [

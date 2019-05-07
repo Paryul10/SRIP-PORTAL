@@ -1,27 +1,38 @@
-{% extends 'base.html' %}
+{% load bootstrap3 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+{% bootstrap_form %}
 
-{% block title %}SRIP USER PORTAL{% endblock %}
+<html>
 
-{% block content %}
-<center> <h2> SRIP STUDENTS PORTAL </h2>
-{% if user.is_authenticated %} 
-  Hi {{ user.username }}!
-</br>
-  <table>
+<head>
+  <meta charset="utf-8">
+  <title>Login</title>
+</head>
+
+<body>
+  <center>
+    <h2> SRIP STUDENTS PORTAL </h2>
+    {% if user.is_authenticated %}
+    Hi {{ user.username }}!
+    </br>
+    <table>
       <tr>
-          <td><a href="/users/{{ user.username }}/"><button>View Performance</button></a></td> 
-      </br>
+        <td><a href="/users/{{ user.username }}/"><button>View Performance</button></a></td>
+        </br>
       </tr>
-  </table>
-</br>
-  <a href="{% url 'logout' %}"><button>Logout</button></a>
-{% else %}
-  <p>You are not logged in</p>
-  <a href="{% url 'login' %}"><button>Login</button></a>
-{% endif %}
-{% endblock %}
+      <tr>
+        <td><a href="portalapp/logissue/"><button>Log an Issue</button></a></td>
+        </br>
+      </tr>
+    </table>
+    </br>
+    <a href="{% url 'logout' %}"><button>Logout</button></a>
+    {% else %}
+    <p>You are not logged in</p>
+    <a href="{% url 'login' %}"><button>Login</button></a>
+    {% endif %}
+  </center>
+</body>
 
-
-
-
-
+</html>
