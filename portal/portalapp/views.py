@@ -19,11 +19,12 @@ def displayusers(request):
 
 def displaypoints(request,username):
     current_user = request.user
-    # print(current_user)
-    # print("---------------------------------------------------")
-    p = Student.objects.get(user=current_user).function_points
-    # print("---------------------------------------------------")
-    # e = Points.objects.get(pk=user_id).effort
-    return HttpResponse("Function Points of user %s" % p)
+    data = Student.objects.get(user=current_user)
+    context = {'data':data}
+    # return HttpResponse("Function Points of user are %s" % p)
+    return render(request,'portalapp/points.html',context)
+
+def passwordreset(request):
+    return render(request,'registration/passwordreset.html')
 
     

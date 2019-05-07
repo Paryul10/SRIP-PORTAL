@@ -7,7 +7,7 @@
 {% if user.is_authenticated %}
 <h1>Hello</h1>
   Hi {{ user.username }}!
-  <p><a href="{% url 'logout' %}">logout</a></p>
+  <a href="{% url 'logout' %}"><button>logout</button></a>
 {% else %}
   <p>SRIP USER PORTAL</p>
   <p>You are not logged in</p>
