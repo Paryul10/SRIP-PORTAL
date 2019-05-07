@@ -1,0 +1,25 @@
+
+{% extends 'base.html' %}
+
+{% block title %}SRIP USER PORTAL{% endblock %}
+
+{% block content %}
+  <h2> SRIP STUDENTS PORTAL </h2>
+{% if user.is_authenticated %} 
+  Hi {{ user.username }}!
+  <table>
+      <tr>
+          <td><a href="/users/{{ user.username }}/">Performance</a></td>
+      </tr>
+  </table>
+  <p><a href="{% url 'logout' %}">logout</a></p>
+{% else %}
+  <p>You are not logged in</p>
+  <a href="{% url 'login' %}">login</a>
+{% endif %}
+{% endblock %}
+
+
+
+
+

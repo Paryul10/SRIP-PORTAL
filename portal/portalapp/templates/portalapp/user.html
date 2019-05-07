@@ -1,0 +1,7 @@
+<table>
+    {% for s in students %}
+    <tr>
+        <td><a href="/users/{{ s.id }}/">{{ s.username }}</a></td>
+    </tr>
+    {% endfor %}
+</table>
