@@ -15,8 +15,11 @@
     {% csrf_token %}
     {% bootstrap_form form %}
     {% buttons %}
-    <button type="submit" class="btn btn-lg btn-primary btn-block">Login</button>
+    <button type="submit" class="btn btn-md btn-primary btn-block">Login</button>
     {% endbuttons %}
+    <div align="center">
+      <a class="btn btn-info" role="button" href="/registration/passwordreset.html">Forgot Password</a>
+    </div>
   </form>
 </body>
 

@@ -25,10 +25,10 @@ SECRET_KEY = '*6)3$q!ia$9xx6e9jnl#p2&e9z^pwi1r)5h*w@i!gykzrccybp'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1:8080', 'localhost' , '*']
 
 
-# Application definition
+# Application definition  
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -124,3 +124,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
+
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR,'portalapp/assets'),
+)

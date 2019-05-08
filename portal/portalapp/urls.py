@@ -1,4 +1,5 @@
 from django.conf.urls import url
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 
 from . import views
@@ -12,3 +13,5 @@ urlpatterns = [
     url(r'^registration/passwordreset.html/$',views.passwordreset,name='passwordreset'),
     # url(r'^users/(?P<user_id>[0-9]+)/$',views.displaypoints,name = 'displaypoints')
 ]
+
+urlpatterns += staticfiles_urlpatterns()
