@@ -1,36 +1,38 @@
 {% load bootstrap3 %}
 {% bootstrap_css %}
 {% bootstrap_javascript %}
-{% bootstrap_form %}
 
 <html>
 
 <head>
   <meta charset="utf-8">
-  <title>Login</title>
+  <title>SRIP</title>
 </head>
 
 <body>
   <center>
-    <h2> SRIP STUDENTS PORTAL </h2>
+    <div class="container-fluid" style="background-color: darkblue; padding: 20px;">
+      <h2 style="color:whitesmoke"> SRIP STUDENTS PORTAL </h2>
+    </div>
     {% if user.is_authenticated %}
-    Hi {{ user.username }}!
+    <div class="container-fluid" style="background-color: wheat; padding: 10px;">
+      <h4 style="color: black;"><i>Hi {{ user.username }}!</i></h4>
+    </div>
+    <br>
+    <br>
+    <a href="/users/{{ user.username }}/"><button class="btn-primary btn-lg">View Performance</button></a>
+    <br>
+    <br>
+    <a href="portalapp/logissue/"><button class="btn-primary btn-lg">Log an Issue</button></a>
     </br>
-    <table>
-      <tr>
-        <td><a href="/users/{{ user.username }}/"><button>View Performance</button></a></td>
-        </br>
-      </tr>
-      <tr>
-        <td><a href="portalapp/logissue/"><button>Log an Issue</button></a></td>
-        </br>
-      </tr>
-    </table>
     </br>
-    <a href="{% url 'logout' %}"><button>Logout</button></a>
+    <a href="{% url 'logout' %}"><button class="btn-primary btn-sm">Logout</button></a>
     {% else %}
-    <p>You are not logged in</p>
-    <a href="{% url 'login' %}"><button>Login</button></a>
+    <div class="container-fluid" style="background-color: wheat; padding: 10px;">
+      <p style="color: black;">You are not logged in</p>
+      <br>
+      <a href="{% url 'login' %}"><button class="btn-primary btn-sm">Login</button></a>
+    </div>
     {% endif %}
   </center>
 </body>

@@ -1,8 +1,23 @@
-<form method="post">
-    {% csrf_token %}
-    {{ form }}
-    <input type="submit" value="Submit">
-</form>
+{% load bootstrap3 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
 
+<html>
 
+<head>
+    <meta charset="utf-8">
+    <title>Log Issue</title>
+</head>
 
+<body>
+    <form method="POST" class="form-signin" style="background-color: lightgrey; padding: 20px; border-radius: 10px;">
+        <h2 class="form-signin-heading">Log an Issue</h2>
+        {% csrf_token %}
+        {% bootstrap_form form %}
+        {% buttons %}
+        <button type="submit" class="btn btn-lg btn-primary btn-block">Submit</button>
+        {% endbuttons %}
+    </form>
+</body>
+
+</html>
