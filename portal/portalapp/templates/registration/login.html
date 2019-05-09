@@ -11,11 +11,11 @@
 
 <body>
   <form method="POST" class="form-signin" style="background-color: lightgrey; padding: 20px; border-radius: 10px;">
-    <h2 class="form-signin-heading">Login</h2>
+    <h2 class="form-signin-heading ">Login</h2>
     {% csrf_token %}
     {% bootstrap_form form %}
     {% buttons %}
-    <button type="submit" class="btn btn-md btn-primary btn-block">Login</button>
+    <button type="submit" class="btn btn-md btn-primary">Login</button>
     {% endbuttons %}
     <div align="center">
       <a class="btn btn-info" role="button" href="/registration/passwordreset.html">Forgot Password</a>

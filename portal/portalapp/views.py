@@ -6,10 +6,10 @@ from django.contrib.auth.models import User
 from django.contrib.auth import views as auth_views
 from .forms import IssueForm
 
-# Create your views here.
+# Create your views here.'
+
 
 def calculate(current_user):
-    print(current_user)
     issue_points_info = LoggedIssue.objects.filter(username=current_user)
     total = 0
     for i in issue_points_info:
@@ -20,7 +20,7 @@ def calculate(current_user):
     user_display_info.save()
 
 
-def index(request):
+def index(request):    
     return render(request, 'portalapp/index.html')
 
 
@@ -49,12 +49,15 @@ def logissue(request):
         # create a form instance and populate it with data from the request:
         form = IssueForm(request.POST)
         if form.is_valid():
+            current_user = request.user.username
             cleaned_data = form.cleaned_data
             commit_id_form = cleaned_data.get('commit_id')
             url_form = cleaned_data.get('url')
-            obj = LoggedIssue(username=request.user.username,commit_id=commit_id_form,url=url_form)
+            mentor_name = Student.objects.get(user=request.user).mentor
+            obj = LoggedIssue(username=current_user,commit_id=commit_id_form,url=url_form,mentor=mentor_name)
             try:
                 obj.save()
+    
             except:
                 return HttpResponse('Already Existing Commit! Please resubmit with proper commit id')
     

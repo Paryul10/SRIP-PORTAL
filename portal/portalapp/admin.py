@@ -1,6 +1,23 @@
+from __future__ import unicode_literals
 from django.contrib import admin
-from .models import Student,LoggedIssue
+from .models import Student, LoggedIssue
 
 # Register your models here.
-admin.site.register(Student)
-admin.site.register(LoggedIssue)
+
+
+class StudentAdmin(admin.ModelAdmin):
+    list_display = ['user' , 'function_points' , 'effort', 'mentor']
+
+    # def filter_by_mentors(modeladmin,request,queryset):
+    #     for students in queryset:
+
+
+admin.site.register(Student,StudentAdmin)
+
+
+class IssueAdmin(admin.ModelAdmin):
+    list_display = ['username', 'commit_id',
+                    'url', 'issue_points', 'mentor', 'is_added']
+
+
+admin.site.register(LoggedIssue, IssueAdmin)

@@ -11,15 +11,11 @@
 
 <body>
   <center>
-    
-    <!-- <div> This does not  work . Just doesn't -->
-    <!-- <img src="SRIP.png"> -->
-    <!-- </div> -->
-    <div>
-      <img src = 'static/SRIP.png' class="img-responsive" >
+    <div class="container-fluid">
+      <img src='static/SRIP.png' class="img-responsive">
     </div>
     <div class="container-fluid" style="background-color: darkblue; padding: 20px;">
-      <h2 style="color:whitesmoke"> SRIP STUDENTS PORTAL </h2>
+      <h2 style="color:whitesmoke"> SRIP INTERNS PORTAL </h2>
     </div>
     {% if user.is_authenticated %}
     <div class="container-fluid" style="background-color: wheat; padding: 10px;">
@@ -27,18 +23,22 @@
     </div>
     <br>
     <br>
-    <a href="/users/{{ user.username }}/"><button class="btn-primary btn-lg">View Performance</button></a>
-    <br>
-    <br>
-    <a href="portalapp/logissue/"><button class="btn-primary btn-lg">Log an Issue</button></a>
-    </br>
-    </br>
-    <a href="{% url 'logout' %}"><button class="btn-primary btn-sm">Logout</button></a>
+    <div class="btn-group">
+      <a href="/users/{{ user.username }}/"><button class="btn-primary btn-lg btn-block">View Performance</button></a>
+      <br>
+      <br>
+      <a href="portalapp/logissue/"><button class="btn-primary btn-lg btn-block">Log a Commit</button></a>
+      </br>
+      </br>
+      <a href="{% url 'logout' %}"><button class="btn-primary btn-sm">Logout</button></a>
+    </div>
     {% else %}
     <div class="container-fluid" style="background-color: wheat; padding: 10px;">
       <p style="color: black;">You are not logged in</p>
       <br>
-      <a href="{% url 'login' %}"><button class="btn-primary btn-sm">Login</button></a>
+      <div class="btn-group">
+        <a href="{% url 'login' %}"><button class="btn-primary btn-lg btn-block">Login</button></a>
+      </div>
     </div>
     {% endif %}
   </center>
