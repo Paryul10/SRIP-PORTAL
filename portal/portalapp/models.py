@@ -10,7 +10,7 @@ class Student(models.Model):
     mentor = models.CharField(max_length=100,default=" ")
 
     def __str__(self):
-        return self.user 
+        return self.user.username 
 
 class LoggedIssue(models.Model):
     username = models.CharField(max_length=50)
