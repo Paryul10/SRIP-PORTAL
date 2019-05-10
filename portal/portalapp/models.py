@@ -7,7 +7,9 @@ class Student(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     function_points = models.IntegerField(default=0)
     effort = models.FloatField(default=0)
+    report = models.URLField(default="https://github.com/aditya3498/SRIP2019-Batch1/wiki")
     mentor = models.CharField(max_length=100,default=" ")
+    batch = models.CharField(max_length=100,default="SRIP19-BATCH1")
 
     def __str__(self):
         return self.user.username 

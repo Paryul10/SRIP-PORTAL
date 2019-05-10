@@ -15,12 +15,21 @@
     {% csrf_token %}
     {% bootstrap_form form %}
     {% buttons %}
-    <button type="submit" class="btn btn-md btn-primary">Login</button>
+    <button type="submit" class="btn btn-md btn-primary" style="background-color: #0EBFE9">Login</button>
     {% endbuttons %}
-    <div align="center">
+    <div>
       <a class="btn btn-info" role="button" href="/registration/passwordreset.html">Forgot Password</a>
     </div>
   </form>
+  <br>
+  <footer>
+    <div class="container-fluid">
+      <p>
+        <center>Copyright 2019 ©<b> SRIP</b>. All rights reserved.</center>
+      </p>
+    </div>
+  </footer>
+
 </body>
 
 </html>

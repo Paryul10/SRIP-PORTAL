@@ -12,8 +12,11 @@
 <body>
     <center>
         <div class="container-fluid" style="background-color: darkblue; padding: 10px;">
-            <h3 style="color:whitesmoke">Your function point average is {{ points_info.function_points }}</h3>
-            <h3 style="color:whitesmoke">Your equivalent effort is {{ points_info.effort }}</h3>
+            <h3 style="color:whitesmoke">Your function point average is {{ info.function_points }} out of 100</h3>
+            <h3 style="color:whitesmoke">Your equivalent effort in hours is {{ info.effort }} out of 240 </h3>
+            <h4 style="color:whitesmoke">Weekly Report Link : <a style="color: lime" href= {{ info.report }}> {{ info.report }} </a></h4>
+            <h4 style="color:whitesmoke">Mentor : {{ info.mentor }}</h4>
+
         </div>
         <div class="table-responsive">
             <table class="table table-hover">
@@ -38,6 +41,15 @@
             </table>
         </div>
     </center>
+    <br>
+    <footer>
+        <div class="container-fluid">
+            <p>
+                <center>Copyright 2019 ©<b> SRIP</b>. All rights reserved.</center>
+            </p>
+        </div>
+    </footer>
+
 </body>
 
 </html>

@@ -6,16 +6,16 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Log Commit</title>
+    <title>Report</title>
 </head>
 
 <body>
     <form method="POST" class="form-signin" style="background-color: lightgrey; padding: 20px; border-radius: 10px;">
-        <h2 class="form-signin-heading">Log a Commit</h2>
+        <h2 class="form-signin-heading">Upload Weekly Report Link</h2>
         {% csrf_token %}
         {% bootstrap_form form %}
         {% buttons %}
-        <button type="submit" class="btn btn-lg btn-primary" style="background-color: #0EBFE9">Submit</button>
+        <button type="submit" class="btn btn-lg btn-primary" style="background-color:#0EBFE9">Submit</button>
         {% endbuttons %}
     </form>
     <br>

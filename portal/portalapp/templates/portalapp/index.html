@@ -15,33 +15,45 @@
       <img src='static/SRIP.png' class="img-responsive">
     </div>
     <div class="container-fluid" style="background-color: darkblue; padding: 20px;">
-      <h2 style="color:whitesmoke"> SRIP INTERNS PORTAL </h2>
+      <h2 style="color:whitesmoke"> SRIP SCOREBOARD </h2>
     </div>
     {% if user.is_authenticated %}
-    <div class="container-fluid" style="background-color: wheat; padding: 10px;">
+    <div class="container-fluid" style="background-color:cadetblue ; padding: 10px;">
       <h4 style="color: black;"><i>Hi {{ user.username }}!</i></h4>
     </div>
     <br>
     <br>
-    <div class="btn-group">
-      <a href="/users/{{ user.username }}/"><button class="btn-primary btn-lg btn-block">View Performance</button></a>
+    <div class="btn-group bg-light">
+      <a href="/users/{{ user.username }}/"><button class="btn-primary btn-lg btn-block" style="background-color:#0EBFE9">View Performance</button></a>
       <br>
       <br>
-      <a href="portalapp/logissue/"><button class="btn-primary btn-lg btn-block">Log a Commit</button></a>
+      <a href="portalapp/logissue/"><button class="btn-primary btn-lg btn-block" style="background-color: #0EBFE9">Log a Commit</button></a>
       </br>
       </br>
-      <a href="{% url 'logout' %}"><button class="btn-primary btn-sm">Logout</button></a>
+      <a href="portalapp/report/"><button class="btn-primary btn-lg btn-block" style="background-color: #0EBFE9">Update Weekly Report</button></a>
+      </br>
+      </br>
+      <a href="{% url 'logout' %}"><button class="btn-primary btn-sm" style="background-color:#0EBFE9">Logout</button></a>
     </div>
     {% else %}
-    <div class="container-fluid" style="background-color: wheat; padding: 10px;">
+    <div class="container-fluid" style="background-color: cadetblue; padding: 10px;">
       <p style="color: black;">You are not logged in</p>
       <br>
       <div class="btn-group">
-        <a href="{% url 'login' %}"><button class="btn-primary btn-lg btn-block">Login</button></a>
+        <a href="{% url 'login' %}"><button class="btn-primary btn-lg btn-block" style="background-color:#0EBFE9" >Login</button></a>
       </div>
     </div>
     {% endif %}
   </center>
+  <br>
+  <footer class="page-footer">
+  <div class="container-fluid">
+    <p>
+      <center>Copyright 2019 ©<b> SRIP</b>. All rights reserved.</center>
+    </p>
+  </div>
+</footer>
+
 </body>
 
 </html>
