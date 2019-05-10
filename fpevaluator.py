@@ -4,42 +4,52 @@ lang = sys.argv[1]
 slocs = sys.argv[2]
 
 sloc = int(slocs,10)
+div_fac = 27
+mul_fac = 3
+j = 0.45
+power = mul_fac * j
 
-python_sloc_fp = 20
+
+python_sloc_fp = 53.33
 python_hours_fp = 9
 
-java_sloc_fp = 53
+java_sloc_fp = 53.33
 java_hours_fp = 10.6
 
-javascript_sloc_fp = 47
+javascript_sloc_fp = 70
 javascript_hours_fp = 10
 
-go_sloc_fp = 18
+go_sloc_fp = 53.33
 go_hours_fp = 5
 
-csharp_sloc_fp = 54
+csharp_sloc_fp = 51.20
 csharp_hours_fp = 15.5
 
-perl_sloc_fp = 24
+perl_sloc_fp = 35.56
 perl_hours_fp = 8
 
-php_sloc_fp = 67
+php_sloc_fp = 53.33
 php_hours_fp = 12
 
-dotnet_sloc_fp = 57
+dotnet_sloc_fp = 24.62
 dotnet_hours_fp = 11
 
-html_sloc_fp = 15
+html_sloc_fp = 160
 html_hours_fp = 4
 
 c_sloc_fp = 128
 c_hours_fp = 13
 
-cpp_sloc_fp = 53
+cpp_sloc_fp = 53.33
 cpp_hours_fp = 12.4
 
-sql_sloc_fp = 18
+sql_sloc_fp = 35
 sql_hours_fp = 8
+
+xml_sloc_fp = 128
+xml_hours_fp = 13
+
+ruby_sloc_fp = 45.71
 
 
 function_points = 0
@@ -78,10 +88,22 @@ elif lang == "cpp":
 elif lang == "sql":
     function_points = sloc / sql_sloc_fp
     hours = function_points * sql_hours_fp
+elif lang == "xml":
+    function_points = sloc / xml_sloc_fp
+    # hours = function_points * sql_hours_fp
+elif lang == "ruby":
+    function_points = sloc / ruby_sloc_fp
+    # hours = function_points * sql_hours_fp
 else:
     print("Languages Available and Usage:")
     print("python,java,javascript,go,csharp,perl,php,dotnet,html,c,cpp,sql")
 
 
+# print("Hours:", hours/10)
+man_months = function_points ** power 
+man_months = man_months / 27
+
 print("Function Points:" , function_points)
-print("Hours:", hours/10)
+print("Man_months:" , man_months)
+print("Man_hours:" , 160 * man_months)
+
