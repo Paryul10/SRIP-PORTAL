@@ -1,0 +1,34 @@
+{% load bootstrap3 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Upload Handle</title>
+</head>
+
+<body>
+    <form method="POST" class="form-signin" style="background-color: lightgrey; padding: 20px; border-radius: 10px;">
+        <h2 class="form-signin-heading">Provide You Git Handle</h2>
+        {% csrf_token %}
+        {% bootstrap_form form %}
+        {% for error in form.non_field_errors %}
+        <p class="help is-danger" > {{ error }} </p>
+        {% endfor %}
+        {% buttons %}
+        <button type="submit" class="btn btn-lg btn-primary" style="background-color: #0EBFE9">Submit</button>
+        {% endbuttons %}
+    </form>
+    <br>
+    <footer class="page-footer">
+        <div class="container-fluid">
+            <p>
+                <center>Copyright 2019 ©<b> SRIP</b>. All rights reserved.</center>
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

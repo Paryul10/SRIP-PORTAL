@@ -6,7 +6,7 @@ from .models import Student, LoggedIssue
 
 
 class StudentAdmin(admin.ModelAdmin):
-    list_display = ['user' , 'function_points' , 'effort', 'mentor','report' , 'batch']
+    list_display = ['user' , 'function_points' , 'effort', 'handle', 'mentor','report' , 'batch']
 
     # def filter_by_mentors(modeladmin,request,queryset):
     #     for students in queryset:

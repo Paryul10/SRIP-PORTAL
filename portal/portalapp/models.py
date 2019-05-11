@@ -10,6 +10,7 @@ class Student(models.Model):
     report = models.URLField(default="https://github.com/aditya3498/SRIP2019-Batch1/wiki")
     mentor = models.CharField(max_length=100,default=" ")
     batch = models.CharField(max_length=100,default="SRIP19-BATCH1")
+    handle = models.CharField(max_length=25,unique=True,default=None,blank=True)
 
     def __str__(self):
         return self.user.username 

@@ -4,10 +4,9 @@ from django.http import HttpResponseRedirect
 from .models import Student, LoggedIssue
 from django.contrib.auth.models import User
 from django.contrib.auth import views as auth_views
-from .forms import IssueForm, ReportForm
+from .forms import IssueForm, ReportForm , HandleForm
 
 # Create your views here.'
-
 
 def calculate(current_user):
     issue_points_info = LoggedIssue.objects.filter(username=current_user)
@@ -21,7 +20,12 @@ def calculate(current_user):
 
 
 def index(request):
-    return render(request, 'portalapp/index.html')
+    if request.user.is_authenticated:
+        current_user = request.user
+        info = Student.objects.get(user=current_user)
+        return render(request, 'portalapp/index.html', {'info':info})
+    else:
+        return render(request, 'portalapp/index.html')    
 
 
 def displayusers(request):
@@ -91,3 +95,23 @@ def report(request):
         form = ReportForm()
         return render(request,'portalapp/report.html',{'form':form})
 
+def uploadhandle(request):
+
+    if request.method == 'POST':
+        form = HandleForm(request.POST)
+        if form.is_valid():
+            current_user = request.user
+            cleaned_data = form.cleaned_data
+            handle_form = cleaned_data.get('handle')
+            obj = Student.objects.get(user=current_user)
+            obj.handle = handle_form
+            try:
+                obj.save()
+                return HttpResponseRedirect('/')
+            except:
+                return HttpResponse('Already Existing Handle! Please check and resubmit')
+            
+    else:
+        form = HandleForm()
+    
+    return render(request,'portalapp/uploadhandle.html',{'form':form})
