@@ -14,8 +14,8 @@ def calculate(current_user):
     for i in issue_points_info:
         total += i.issue_points
     user_display_info = Student.objects.get(user=current_user)
-    user_display_info.function_points = total
-    user_display_info.effort = user_display_info.function_points * .5
+    user_display_info.function_points = total/100
+    user_display_info.effort = user_display_info.function_points * 13
     user_display_info.save()
 
 
@@ -85,9 +85,9 @@ def report(request):
             current_user = request.user
             cleaned_data = form.cleaned_data
             report_form = cleaned_data.get('report')
-            print(report_form)
+            # print(report_form)
             obj = Student.objects.get(user=current_user)
-            print(obj)
+            # print(obj)
             obj.report = report_form
             obj.save()
             return HttpResponseRedirect('/')
