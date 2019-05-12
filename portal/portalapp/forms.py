@@ -11,11 +11,6 @@ class HandleForm(forms.Form):
     handle = forms.CharField(max_length=40,label='Git Handle')
     handle_confirm = forms.CharField(max_length=40,label='Confirm Git Handle')
 
-    # def __init__(self, *args, **kwargs):
-    #     super(HandleForm, self).__init__(*args, **kwargs) # Call to ModelForm constructor
-    #     self.fields['handle'].widget.attrs['style'] = 'width:100px; height:40px;'
-    #     self.fields['handle_confirm'].widget.attrs['style']  = 'width:800px; height:80px;'
-
     def clean(self):
         cleaned_data = super().clean()    #inbuilt clean.
 
