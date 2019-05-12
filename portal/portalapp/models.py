@@ -8,9 +8,9 @@ class Student(models.Model):
     function_points = models.IntegerField(default=0)
     effort = models.FloatField(default=0)
     report = models.URLField(default="https://github.com/aditya3498/SRIP2019-Batch1/wiki")
-    mentor = models.CharField(max_length=100,default=" ")
+    mentor = models.CharField(max_length=100,blank=True,null=True)
     batch = models.CharField(max_length=100,default="SRIP19-BATCH1")
-    handle = models.CharField(max_length=25,unique=True,default=None,blank=True)
+    handle = models.CharField(max_length=25,unique=True,blank=True,null=True)
 
     def __str__(self):
         return self.user.username 

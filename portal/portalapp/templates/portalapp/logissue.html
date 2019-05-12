@@ -10,7 +10,8 @@
 </head>
 
 <body>
-    <form method="POST" class="form-signin" style="background-color: lightgrey; padding: 20px; border-radius: 10px;">
+    <center>
+    <form method="POST" class="form-signin" style="background-color: lightgrey; padding: 20px; border-radius: 10px; width:60%;">
         <h2 class="form-signin-heading">Log a Commit</h2>
         {% csrf_token %}
         {% bootstrap_form form %}
@@ -26,6 +27,7 @@
             </p>
         </div>
     </footer>
+</center>
 </body>
 
 </html>
