@@ -16,3 +16,5 @@ git reset --hard $commitid
 
 cd ..
 cloc $repo
+
+rm -rf $repo

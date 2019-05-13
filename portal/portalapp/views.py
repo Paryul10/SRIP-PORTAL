@@ -4,9 +4,10 @@ from django.http import HttpResponseRedirect
 from .models import Student, LoggedIssue
 from django.contrib.auth.models import User
 from django.contrib.auth import views as auth_views
-from .forms import IssueForm, ReportForm , HandleForm
+from .forms import IssueForm, ReportForm, HandleForm
 
 # Create your views here.'
+
 
 def calculate(current_user):
     issue_points_info = LoggedIssue.objects.filter(username=current_user)
@@ -14,17 +15,18 @@ def calculate(current_user):
     for i in issue_points_info:
         total += i.issue_points
     user_display_info = Student.objects.get(user=current_user)
-    user_display_info.function_points = total/100
+    user_display_info.function_points = total
     user_display_info.effort = user_display_info.function_points * 13
     user_display_info.save()
+
 
 def index(request):
     if request.user.is_authenticated:
         current_user = request.user
         info = Student.objects.get(user=current_user)
-        return render(request, 'portalapp/index.html', {'info':info})
+        return render(request, 'portalapp/index.html', {'info': info})
     else:
-        return render(request, 'portalapp/index.html')    
+        return render(request, 'portalapp/index.html')
 
 
 def displayusers(request):
@@ -60,12 +62,8 @@ def logissue(request):
             commit_id_form = cleaned_data.get('commit_id')
             url_form = cleaned_data.get('url')
             mentor_name = Student.objects.get(user=request.user).mentor
-            if not mentor_name:
-                obj = LoggedIssue(
-                    username=current_user, commit_id=commit_id_form, url=url_form)
-            else:
-                obj = LoggedIssue(
-                    username=current_user, commit_id=commit_id_form, url=url_form, mentor=mentor_name)
+            obj = LoggedIssue(
+                username=current_user, commit_id=commit_id_form, url=url_form, mentor=mentor_name)
             try:
                 obj.save()
 
@@ -96,7 +94,8 @@ def report(request):
             return HttpResponseRedirect('/')
     else:
         form = ReportForm()
-        return render(request,'portalapp/report.html',{'form':form})
+        return render(request, 'portalapp/report.html', {'form': form})
+
 
 def uploadhandle(request):
 
@@ -113,8 +112,8 @@ def uploadhandle(request):
                 return HttpResponseRedirect('/')
             except:
                 return HttpResponse('Already Existing Handle! Please check and resubmit')
-            
+
     else:
         form = HandleForm()
-    
-    return render(request,'portalapp/uploadhandle.html',{'form':form})
+
+    return render(request, 'portalapp/uploadhandle.html', {'form': form})
