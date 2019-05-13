@@ -14,7 +14,7 @@ def calculate(current_user):
     for i in issue_points_info:
         total += i.issue_points
     user_display_info = Student.objects.get(user=current_user)
-    user_display_info.function_points = total/100
+    user_display_info.function_points = total
     user_display_info.effort = user_display_info.function_points * 13
     user_display_info.save()
 

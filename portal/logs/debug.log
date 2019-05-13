@@ -1,0 +1,2027 @@
+[2019-05-13 01:34:56 +0530] [19624] [DEBUG] Current configuration:
+  max_requests_jitter: 0
+  timeout: 30
+  post_fork: <function Postfork.post_fork at 0x7f9666cf4488>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f9666cf4598>
+  forwarded_allow_ips: ['127.0.0.1']
+  statsd_host: None
+  graceful_timeout: 30
+  preload_app: False
+  chdir: /root/SRIP-PORTAL/portal
+  pre_exec: <function PreExec.pre_exec at 0x7f9666cf48c8>
+  paste: None
+  errorlog: /root/SRIP-PORTAL/portal/logs/debug.log
+  bind: ['unix:/root/SRIP-PORTAL/portal/prod_env/run/gunicorn.sock']
+  on_starting: <function OnStarting.on_starting at 0x7f9666cf4048>
+  disable_redirect_access_to_syslog: False
+  raw_paste_global_conf: []
+  workers: 3
+  worker_class: sync
+  worker_connections: 1000
+  proxy_allow_ips: ['127.0.0.1']
+  ca_certs: None
+  post_request: <function PostRequest.post_request at 0x7f9666cf4a60>
+  syslog_addr: udp://localhost:514
+  statsd_prefix: 
+  worker_tmp_dir: None
+  group: 27
+  on_reload: <function OnReload.on_reload at 0x7f9666cf4158>
+  max_requests: 0
+  pythonpath: None
+  keyfile: None
+  ssl_version: 2
+  ciphers: TLSv1
+  threads: 1
+  keepalive: 2
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  loglevel: debug
+  syslog_prefix: None
+  user: 0
+  proc_name: SRIP_Portal
+  limit_request_fields: 100
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f9666cf4d90>
+  config: None
+  reload_engine: auto
+  default_proc_name: portal.wsgi:application
+  cert_reqs: 0
+  sendfile: None
+  reuse_port: False
+  suppress_ragged_eofs: True
+  capture_output: False
+  reload_extra_files: []
+  daemon: False
+  accesslog: None
+  logconfig_dict: {}
+  do_handshake_on_connect: False
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f9666cf47b8>
+  backlog: 2048
+  reload: False
+  spew: False
+  pidfile: None
+  initgroups: False
+  when_ready: <function WhenReady.when_ready at 0x7f9666cf4268>
+  worker_int: <function WorkerInt.worker_int at 0x7f9666cf46a8>
+  pre_request: <function PreRequest.pre_request at 0x7f9666cf49d8>
+  syslog: False
+  tmp_upload_dir: None
+  certfile: None
+  child_exit: <function ChildExit.child_exit at 0x7f9666cf4b70>
+  limit_request_field_size: 8190
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  raw_env: []
+  umask: 0
+  secure_scheme_headers: {'X-FORWARDED-SSL': 'on', 'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https'}
+  proxy_protocol: False
+  limit_request_line: 4094
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  pre_fork: <function Prefork.pre_fork at 0x7f9666cf4378>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f9666cf4c80>
+  on_exit: <function OnExit.on_exit at 0x7f9666cf4ea0>
+  check_config: False
+[2019-05-13 01:34:56 +0530] [19624] [INFO] Starting gunicorn 19.9.0
+[2019-05-13 01:34:56 +0530] [19624] [DEBUG] Arbiter booted
+[2019-05-13 01:34:56 +0530] [19624] [INFO] Listening at: unix:/root/SRIP-PORTAL/portal/prod_env/run/gunicorn.sock (19624)
+[2019-05-13 01:34:56 +0530] [19624] [INFO] Using worker: sync
+[2019-05-13 01:34:56 +0530] [19630] [INFO] Booting worker with pid: 19630
+[2019-05-13 01:34:56 +0530] [19631] [INFO] Booting worker with pid: 19631
+[2019-05-13 01:34:56 +0530] [19632] [INFO] Booting worker with pid: 19632
+[2019-05-13 01:34:56 +0530] [19624] [DEBUG] 3 workers
+[2019-05-12 20:05:43 +0000] [19631] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-12 20:05:43 +0000] [19630] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-12 20:05:43 +0000] [19632] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-13 01:35:43 +0530] [19624] [INFO] Handling signal: winch
+[2019-05-13 01:35:43 +0530] [19624] [DEBUG] SIGWINCH ignored. Not daemonized
+[2019-05-12 20:05:43 +0000] [19631] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-12 20:05:43 +0000] [19632] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-12 20:05:43 +0000] [19630] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-13 01:35:43 +0530] [19624] [INFO] Handling signal: winch
+[2019-05-13 01:35:43 +0530] [19624] [DEBUG] SIGWINCH ignored. Not daemonized
+[2019-05-13 01:35:44 +0530] [19624] [INFO] Handling signal: int
+[2019-05-12 20:05:44 +0000] [19632] [INFO] Worker exiting (pid: 19632)
+[2019-05-12 20:05:44 +0000] [19631] [INFO] Worker exiting (pid: 19631)
+[2019-05-12 20:05:44 +0000] [19630] [INFO] Worker exiting (pid: 19630)
+[2019-05-13 01:35:44 +0530] [19624] [INFO] Shutting down: Master
+[2019-05-13 01:35:48 +0530] [19662] [DEBUG] Current configuration:
+  pre_exec: <function PreExec.pre_exec at 0x7fef5eb938c8>
+  worker_tmp_dir: None
+  paste: None
+  worker_class: sync
+  umask: 0
+  reload_extra_files: []
+  sendfile: None
+  user: 0
+  certfile: None
+  worker_connections: 1000
+  reuse_port: False
+  limit_request_fields: 100
+  default_proc_name: portal.wsgi:application
+  pythonpath: None
+  keyfile: None
+  do_handshake_on_connect: False
+  errorlog: /root/SRIP-PORTAL/portal/logs/debug.log
+  syslog_addr: udp://localhost:514
+  bind: ['unix:/root/SRIP-PORTAL/portal/prod_env/run/gunicorn.sock']
+  proc_name: SRIP_Portal
+  logconfig: None
+  post_request: <function PostRequest.post_request at 0x7fef5eb93a60>
+  chdir: /root/SRIP-PORTAL/portal
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-SSL': 'on', 'X-FORWARDED-PROTO': 'https'}
+  logger_class: gunicorn.glogging.Logger
+  syslog_facility: user
+  worker_int: <function WorkerInt.worker_int at 0x7fef5eb936a8>
+  child_exit: <function ChildExit.child_exit at 0x7fef5eb93b70>
+  on_exit: <function OnExit.on_exit at 0x7fef5eb93ea0>
+  accesslog: None
+  loglevel: debug
+  statsd_prefix: 
+  max_requests_jitter: 0
+  limit_request_line: 4094
+  proxy_protocol: False
+  keepalive: 2
+  disable_redirect_access_to_syslog: False
+  initgroups: False
+  logconfig_dict: {}
+  timeout: 30
+  enable_stdio_inheritance: False
+  config: None
+  worker_exit: <function WorkerExit.worker_exit at 0x7fef5eb93c80>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7fef5eb93d90>
+  preload_app: False
+  syslog_prefix: None
+  on_reload: <function OnReload.on_reload at 0x7fef5eb93158>
+  workers: 3
+  raw_paste_global_conf: []
+  post_fork: <function Postfork.post_fork at 0x7fef5eb93488>
+  proxy_allow_ips: ['127.0.0.1']
+  pre_fork: <function Prefork.pre_fork at 0x7fef5eb93378>
+  ssl_version: 2
+  when_ready: <function WhenReady.when_ready at 0x7fef5eb93268>
+  reload_engine: auto
+  forwarded_allow_ips: ['127.0.0.1']
+  suppress_ragged_eofs: True
+  capture_output: False
+  limit_request_field_size: 8190
+  threads: 1
+  group: 27
+  pre_request: <function PreRequest.pre_request at 0x7fef5eb939d8>
+  pidfile: None
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  backlog: 2048
+  worker_abort: <function WorkerAbort.worker_abort at 0x7fef5eb937b8>
+  reload: False
+  graceful_timeout: 30
+  spew: False
+  cert_reqs: 0
+  ca_certs: None
+  daemon: False
+  raw_env: []
+  syslog: False
+  ciphers: TLSv1
+  on_starting: <function OnStarting.on_starting at 0x7fef5eb93048>
+  statsd_host: None
+  check_config: False
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7fef5eb93598>
+  max_requests: 0
+  tmp_upload_dir: None
+[2019-05-13 01:35:48 +0530] [19662] [INFO] Starting gunicorn 19.9.0
+[2019-05-13 01:35:48 +0530] [19662] [DEBUG] Arbiter booted
+[2019-05-13 01:35:48 +0530] [19662] [INFO] Listening at: unix:/root/SRIP-PORTAL/portal/prod_env/run/gunicorn.sock (19662)
+[2019-05-13 01:35:48 +0530] [19662] [INFO] Using worker: sync
+[2019-05-13 01:35:48 +0530] [19668] [INFO] Booting worker with pid: 19668
+[2019-05-13 01:35:48 +0530] [19670] [INFO] Booting worker with pid: 19670
+[2019-05-13 01:35:48 +0530] [19671] [INFO] Booting worker with pid: 19671
+[2019-05-13 01:35:48 +0530] [19662] [DEBUG] 3 workers
+[2019-05-12 20:06:20 +0000] [19668] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-12 20:06:20 +0000] [19671] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-12 20:06:20 +0000] [19670] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-13 01:36:20 +0530] [19662] [INFO] Handling signal: winch
+[2019-05-13 01:36:20 +0530] [19662] [DEBUG] SIGWINCH ignored. Not daemonized
+[2019-05-12 20:06:20 +0000] [19668] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-12 20:06:20 +0000] [19671] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-12 20:06:20 +0000] [19670] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-13 01:36:20 +0530] [19662] [INFO] Handling signal: winch
+[2019-05-13 01:36:20 +0530] [19662] [DEBUG] SIGWINCH ignored. Not daemonized
+[2019-05-12 20:06:57 +0000] [19671] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-12 20:06:57 +0000] [19668] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-12 20:06:57 +0000] [19670] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-13 01:36:57 +0530] [19662] [INFO] Handling signal: winch
+[2019-05-13 01:36:57 +0530] [19662] [DEBUG] SIGWINCH ignored. Not daemonized
+[2019-05-12 20:06:57 +0000] [19671] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-12 20:06:57 +0000] [19668] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-12 20:06:57 +0000] [19670] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-13 01:36:57 +0530] [19662] [INFO] Handling signal: winch
+[2019-05-13 01:36:57 +0530] [19662] [DEBUG] SIGWINCH ignored. Not daemonized
+[2019-05-12 20:07:04 +0000] [19668] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-12 20:07:04 +0000] [19671] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-12 20:07:04 +0000] [19670] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-13 01:37:04 +0530] [19662] [INFO] Handling signal: winch
+[2019-05-13 01:37:04 +0530] [19662] [DEBUG] SIGWINCH ignored. Not daemonized
+[2019-05-12 20:07:04 +0000] [19668] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-12 20:07:04 +0000] [19670] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-12 20:07:04 +0000] [19671] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-13 01:37:04 +0530] [19662] [INFO] Handling signal: winch
+[2019-05-13 01:37:04 +0530] [19662] [DEBUG] SIGWINCH ignored. Not daemonized
+[2019-05-12 20:08:12 +0000] [19668] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-12 20:08:12 +0000] [19671] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-12 20:08:12 +0000] [19670] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-13 01:38:12 +0530] [19662] [INFO] Handling signal: winch
+[2019-05-13 01:38:12 +0530] [19662] [DEBUG] SIGWINCH ignored. Not daemonized
+[2019-05-12 20:08:12 +0000] [19668] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-12 20:08:12 +0000] [19670] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-12 20:08:12 +0000] [19671] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-13 01:38:12 +0530] [19662] [INFO] Handling signal: winch
+[2019-05-13 01:38:12 +0530] [19662] [DEBUG] SIGWINCH ignored. Not daemonized
+[2019-05-13 01:38:19 +0530] [19662] [INFO] Handling signal: int
+[2019-05-12 20:08:19 +0000] [19668] [INFO] Worker exiting (pid: 19668)
+[2019-05-12 20:08:19 +0000] [19670] [INFO] Worker exiting (pid: 19670)
+[2019-05-12 20:08:19 +0000] [19671] [INFO] Worker exiting (pid: 19671)
+[2019-05-13 01:38:19 +0530] [19662] [INFO] Shutting down: Master
+[2019-05-13 01:41:18 +0530] [19757] [DEBUG] Current configuration:
+  post_fork: <function Postfork.post_fork at 0x7f51b0fbd488>
+  proc_name: SRIP_Portal
+  max_requests_jitter: 0
+  check_config: False
+  keepalive: 2
+  syslog_prefix: None
+  statsd_host: None
+  statsd_prefix: 
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f51b0fbd598>
+  preload_app: False
+  sendfile: None
+  chdir: /root/SRIP-PORTAL/portal
+  when_ready: <function WhenReady.when_ready at 0x7f51b0fbd268>
+  child_exit: <function ChildExit.child_exit at 0x7f51b0fbdb70>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  suppress_ragged_eofs: True
+  max_requests: 0
+  timeout: 30
+  logger_class: gunicorn.glogging.Logger
+  limit_request_fields: 100
+  worker_exit: <function WorkerExit.worker_exit at 0x7f51b0fbdc80>
+  default_proc_name: portal.wsgi:application
+  user: 0
+  initgroups: False
+  paste: None
+  logconfig: None
+  worker_connections: 1000
+  graceful_timeout: 30
+  disable_redirect_access_to_syslog: False
+  bind: ['unix:/root/SRIP-PORTAL/portal/prod_env/run/gunicorn.sock']
+  ssl_version: 2
+  worker_tmp_dir: None
+  forwarded_allow_ips: ['127.0.0.1']
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /root/SRIP-PORTAL/portal/logs/debug.log
+  logconfig_dict: {}
+  cert_reqs: 0
+  on_starting: <function OnStarting.on_starting at 0x7f51b0fbd048>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f51b0fbdd90>
+  reload: False
+  daemon: False
+  keyfile: None
+  loglevel: debug
+  group: 27
+  umask: 0
+  pythonpath: None
+  workers: 3
+  syslog_addr: udp://localhost:514
+  secure_scheme_headers: {'X-FORWARDED-SSL': 'on', 'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https'}
+  worker_class: sync
+  certfile: None
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f51b0fbd7b8>
+  limit_request_line: 4094
+  reload_engine: auto
+  reload_extra_files: []
+  ca_certs: None
+  do_handshake_on_connect: False
+  ciphers: TLSv1
+  spew: False
+  pre_fork: <function Prefork.pre_fork at 0x7f51b0fbd378>
+  pre_exec: <function PreExec.pre_exec at 0x7f51b0fbd8c8>
+  reuse_port: False
+  raw_env: []
+  pidfile: None
+  threads: 1
+  raw_paste_global_conf: []
+  pre_request: <function PreRequest.pre_request at 0x7f51b0fbd9d8>
+  on_exit: <function OnExit.on_exit at 0x7f51b0fbdea0>
+  syslog: False
+  limit_request_field_size: 8190
+  accesslog: None
+  on_reload: <function OnReload.on_reload at 0x7f51b0fbd158>
+  worker_int: <function WorkerInt.worker_int at 0x7f51b0fbd6a8>
+  capture_output: False
+  config: None
+  syslog_facility: user
+  tmp_upload_dir: None
+  enable_stdio_inheritance: False
+  post_request: <function PostRequest.post_request at 0x7f51b0fbda60>
+  backlog: 2048
+[2019-05-13 01:41:18 +0530] [19757] [INFO] Starting gunicorn 19.9.0
+[2019-05-13 01:41:18 +0530] [19757] [DEBUG] Arbiter booted
+[2019-05-13 01:41:18 +0530] [19757] [INFO] Listening at: unix:/root/SRIP-PORTAL/portal/prod_env/run/gunicorn.sock (19757)
+[2019-05-13 01:41:18 +0530] [19757] [INFO] Using worker: sync
+[2019-05-13 01:41:18 +0530] [19763] [INFO] Booting worker with pid: 19763
+[2019-05-13 01:41:18 +0530] [19764] [INFO] Booting worker with pid: 19764
+[2019-05-13 01:41:18 +0530] [19766] [INFO] Booting worker with pid: 19766
+[2019-05-13 01:41:18 +0530] [19757] [DEBUG] 3 workers
+[2019-05-12 20:12:05 +0000] [19763] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-12 20:12:05 +0000] [19766] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-12 20:12:05 +0000] [19764] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-13 01:42:05 +0530] [19757] [INFO] Handling signal: winch
+[2019-05-13 01:42:05 +0530] [19757] [DEBUG] SIGWINCH ignored. Not daemonized
+[2019-05-12 20:12:05 +0000] [19763] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-12 20:12:05 +0000] [19766] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-12 20:12:05 +0000] [19764] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-13 01:42:05 +0530] [19757] [INFO] Handling signal: winch
+[2019-05-13 01:42:05 +0530] [19757] [DEBUG] SIGWINCH ignored. Not daemonized
+[2019-05-12 20:13:41 +0000] [19766] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-12 20:13:41 +0000] [19764] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-12 20:13:41 +0000] [19763] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-13 01:43:41 +0530] [19757] [INFO] Handling signal: winch
+[2019-05-13 01:43:41 +0530] [19757] [DEBUG] SIGWINCH ignored. Not daemonized
+[2019-05-12 20:13:41 +0000] [19763] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-12 20:13:41 +0000] [19766] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-12 20:13:41 +0000] [19764] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-13 01:43:41 +0530] [19757] [INFO] Handling signal: winch
+[2019-05-13 01:43:41 +0530] [19757] [DEBUG] SIGWINCH ignored. Not daemonized
+[2019-05-13 01:43:42 +0530] [19757] [INFO] Handling signal: int
+[2019-05-12 20:13:42 +0000] [19764] [INFO] Worker exiting (pid: 19764)
+[2019-05-12 20:13:42 +0000] [19766] [INFO] Worker exiting (pid: 19766)
+[2019-05-12 20:13:42 +0000] [19763] [INFO] Worker exiting (pid: 19763)
+[2019-05-13 01:43:42 +0530] [19757] [INFO] Shutting down: Master
+[2019-05-13 01:44:58 +0530] [19834] [DEBUG] Current configuration:
+  raw_paste_global_conf: []
+  post_fork: <function Postfork.post_fork at 0x7f46b57ae488>
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  loglevel: debug
+  daemon: False
+  max_requests: 0
+  pre_exec: <function PreExec.pre_exec at 0x7f46b57ae8c8>
+  statsd_host: None
+  group: 27
+  do_handshake_on_connect: False
+  on_starting: <function OnStarting.on_starting at 0x7f46b57ae048>
+  capture_output: False
+  preload_app: False
+  check_config: False
+  worker_exit: <function WorkerExit.worker_exit at 0x7f46b57aec80>
+  errorlog: /root/SRIP-PORTAL/portal/logs/debug.log
+  limit_request_fields: 100
+  ciphers: TLSv1
+  config: None
+  raw_env: []
+  pre_fork: <function Prefork.pre_fork at 0x7f46b57ae378>
+  syslog: False
+  threads: 1
+  certfile: None
+  umask: 0
+  timeout: 30
+  limit_request_line: 4094
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f46b57ae598>
+  enable_stdio_inheritance: False
+  ca_certs: None
+  pidfile: None
+  worker_connections: 1000
+  logconfig_dict: {}
+  forwarded_allow_ips: ['127.0.0.1']
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f46b57aed90>
+  workers: 3
+  bind: ['0.0.0.0:9000']
+  accesslog: None
+  chdir: /root/SRIP-PORTAL/portal
+  default_proc_name: portal.wsgi:application
+  paste: None
+  logconfig: None
+  syslog_addr: udp://localhost:514
+  proxy_protocol: False
+  reload: False
+  secure_scheme_headers: {'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on', 'X-FORWARDED-PROTOCOL': 'ssl'}
+  child_exit: <function ChildExit.child_exit at 0x7f46b57aeb70>
+  backlog: 2048
+  user: 0
+  syslog_prefix: None
+  when_ready: <function WhenReady.when_ready at 0x7f46b57ae268>
+  max_requests_jitter: 0
+  suppress_ragged_eofs: True
+  limit_request_field_size: 8190
+  cert_reqs: 0
+  spew: False
+  pythonpath: None
+  proc_name: SRIP_Portal
+  pre_request: <function PreRequest.pre_request at 0x7f46b57ae9d8>
+  proxy_allow_ips: ['127.0.0.1']
+  statsd_prefix: 
+  reuse_port: False
+  on_reload: <function OnReload.on_reload at 0x7f46b57ae158>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f46b57ae7b8>
+  keyfile: None
+  post_request: <function PostRequest.post_request at 0x7f46b57aea60>
+  on_exit: <function OnExit.on_exit at 0x7f46b57aeea0>
+  keepalive: 2
+  disable_redirect_access_to_syslog: False
+  logger_class: gunicorn.glogging.Logger
+  sendfile: None
+  worker_tmp_dir: None
+  initgroups: False
+  tmp_upload_dir: None
+  ssl_version: 2
+  reload_engine: auto
+  worker_int: <function WorkerInt.worker_int at 0x7f46b57ae6a8>
+  worker_class: sync
+  graceful_timeout: 30
+  syslog_facility: user
+  reload_extra_files: []
+[2019-05-13 01:44:58 +0530] [19834] [INFO] Starting gunicorn 19.9.0
+[2019-05-13 01:44:58 +0530] [19834] [DEBUG] Arbiter booted
+[2019-05-13 01:44:58 +0530] [19834] [INFO] Listening at: http://0.0.0.0:9000 (19834)
+[2019-05-13 01:44:58 +0530] [19834] [INFO] Using worker: sync
+[2019-05-13 01:44:58 +0530] [19840] [INFO] Booting worker with pid: 19840
+[2019-05-13 01:44:58 +0530] [19842] [INFO] Booting worker with pid: 19842
+[2019-05-13 01:44:58 +0530] [19843] [INFO] Booting worker with pid: 19843
+[2019-05-13 01:44:58 +0530] [19834] [DEBUG] 3 workers
+[2019-05-12 20:15:00 +0000] [19843] [DEBUG] GET /
+[2019-05-12 20:18:14 +0000] [19840] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-12 20:18:14 +0000] [19843] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-12 20:18:14 +0000] [19842] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-13 01:48:14 +0530] [19834] [INFO] Handling signal: winch
+[2019-05-13 01:48:14 +0530] [19834] [DEBUG] SIGWINCH ignored. Not daemonized
+[2019-05-12 20:18:14 +0000] [19840] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-12 20:18:14 +0000] [19842] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-12 20:18:14 +0000] [19843] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-13 01:48:14 +0530] [19834] [INFO] Handling signal: winch
+[2019-05-13 01:48:14 +0530] [19834] [DEBUG] SIGWINCH ignored. Not daemonized
+[2019-05-12 20:19:05 +0000] [19840] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-12 20:19:05 +0000] [19842] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-12 20:19:05 +0000] [19843] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-13 01:49:05 +0530] [19834] [INFO] Handling signal: winch
+[2019-05-13 01:49:05 +0530] [19834] [DEBUG] SIGWINCH ignored. Not daemonized
+[2019-05-12 20:19:05 +0000] [19840] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-12 20:19:05 +0000] [19843] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-12 20:19:05 +0000] [19842] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-13 01:49:05 +0530] [19834] [INFO] Handling signal: winch
+[2019-05-13 01:49:05 +0530] [19834] [DEBUG] SIGWINCH ignored. Not daemonized
+[2019-05-12 20:19:14 +0000] [19840] [DEBUG] GET /
+[2019-05-12 20:19:15 +0000] [19840] [DEBUG] GET /
+[2019-05-12 20:19:16 +0000] [19840] [DEBUG] GET /
+[2019-05-12 20:19:24 +0000] [19840] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-12 20:19:24 +0000] [19842] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-12 20:19:24 +0000] [19843] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-13 01:49:24 +0530] [19834] [INFO] Handling signal: winch
+[2019-05-13 01:49:24 +0530] [19834] [DEBUG] SIGWINCH ignored. Not daemonized
+[2019-05-12 20:19:24 +0000] [19840] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-12 20:19:24 +0000] [19842] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-12 20:19:24 +0000] [19843] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-13 01:49:24 +0530] [19834] [INFO] Handling signal: winch
+[2019-05-13 01:49:24 +0530] [19834] [DEBUG] SIGWINCH ignored. Not daemonized
+[2019-05-12 20:20:20 +0000] [19840] [DEBUG] GET /
+[2019-05-12 20:20:54 +0000] [19840] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-12 20:20:54 +0000] [19842] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-12 20:20:54 +0000] [19843] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-13 01:50:54 +0530] [19834] [INFO] Handling signal: winch
+[2019-05-13 01:50:54 +0530] [19834] [DEBUG] SIGWINCH ignored. Not daemonized
+[2019-05-12 20:20:54 +0000] [19842] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-12 20:20:54 +0000] [19840] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-12 20:20:54 +0000] [19843] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-13 01:50:54 +0530] [19834] [INFO] Handling signal: winch
+[2019-05-13 01:50:54 +0530] [19834] [DEBUG] SIGWINCH ignored. Not daemonized
+[2019-05-12 20:23:28 +0000] [19843] [DEBUG] GET /
+[2019-05-12 20:23:33 +0000] [19840] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-12 20:23:33 +0000] [19842] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-13 01:53:33 +0530] [19834] [INFO] Handling signal: winch
+[2019-05-13 01:53:33 +0530] [19834] [DEBUG] SIGWINCH ignored. Not daemonized
+[2019-05-12 20:23:33 +0000] [19843] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-12 20:23:33 +0000] [19842] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-12 20:23:33 +0000] [19840] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-13 01:53:33 +0530] [19834] [INFO] Handling signal: winch
+[2019-05-12 20:23:33 +0000] [19843] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-13 01:53:33 +0530] [19834] [DEBUG] SIGWINCH ignored. Not daemonized
+[2019-05-12 20:23:41 +0000] [19842] [DEBUG] GET /
+[2019-05-12 20:23:42 +0000] [19842] [DEBUG] GET /
+[2019-05-12 20:23:47 +0000] [19840] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-12 20:23:47 +0000] [19843] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-13 01:53:47 +0530] [19834] [INFO] Handling signal: winch
+[2019-05-13 01:53:47 +0530] [19834] [DEBUG] SIGWINCH ignored. Not daemonized
+[2019-05-12 20:23:47 +0000] [19842] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-12 20:23:47 +0000] [19843] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-12 20:23:47 +0000] [19840] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-13 01:53:47 +0530] [19834] [INFO] Handling signal: winch
+[2019-05-13 01:53:47 +0530] [19834] [DEBUG] SIGWINCH ignored. Not daemonized
+[2019-05-12 20:23:47 +0000] [19842] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-12 20:24:19 +0000] [19840] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-12 20:24:19 +0000] [19842] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-12 20:24:19 +0000] [19843] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-13 01:54:19 +0530] [19834] [INFO] Handling signal: winch
+[2019-05-13 01:54:19 +0530] [19834] [DEBUG] SIGWINCH ignored. Not daemonized
+[2019-05-12 20:24:19 +0000] [19842] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-12 20:24:19 +0000] [19843] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-12 20:24:19 +0000] [19840] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-13 01:54:19 +0530] [19834] [INFO] Handling signal: winch
+[2019-05-13 01:54:19 +0530] [19834] [DEBUG] SIGWINCH ignored. Not daemonized
+[2019-05-12 20:24:25 +0000] [19842] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-12 20:24:25 +0000] [19840] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-13 01:54:25 +0530] [19834] [INFO] Handling signal: winch
+[2019-05-13 01:54:25 +0530] [19834] [DEBUG] SIGWINCH ignored. Not daemonized
+[2019-05-12 20:24:25 +0000] [19843] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-12 20:24:25 +0000] [19842] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-12 20:24:25 +0000] [19840] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-13 01:54:25 +0530] [19834] [INFO] Handling signal: winch
+[2019-05-12 20:24:25 +0000] [19843] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-13 01:54:25 +0530] [19834] [DEBUG] SIGWINCH ignored. Not daemonized
+[2019-05-12 20:24:54 +0000] [19840] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-12 20:24:54 +0000] [19842] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-12 20:24:54 +0000] [19843] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-13 01:54:54 +0530] [19834] [INFO] Handling signal: winch
+[2019-05-13 01:54:54 +0530] [19834] [DEBUG] SIGWINCH ignored. Not daemonized
+[2019-05-12 20:24:54 +0000] [19843] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-12 20:24:54 +0000] [19842] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-12 20:24:54 +0000] [19840] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-13 01:54:54 +0530] [19834] [INFO] Handling signal: winch
+[2019-05-13 01:54:54 +0530] [19834] [DEBUG] SIGWINCH ignored. Not daemonized
+[2019-05-12 20:27:52 +0000] [19842] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-12 20:27:52 +0000] [19840] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-12 20:27:52 +0000] [19843] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-13 01:57:52 +0530] [19834] [INFO] Handling signal: winch
+[2019-05-13 01:57:52 +0530] [19834] [DEBUG] SIGWINCH ignored. Not daemonized
+[2019-05-12 20:27:52 +0000] [19842] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-12 20:27:52 +0000] [19843] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-12 20:27:52 +0000] [19840] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-13 01:57:52 +0530] [19834] [INFO] Handling signal: winch
+[2019-05-13 01:57:52 +0530] [19834] [DEBUG] SIGWINCH ignored. Not daemonized
+[2019-05-12 20:28:50 +0000] [19843] [DEBUG] GET /
+[2019-05-12 20:28:55 +0000] [19843] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-12 20:28:55 +0000] [19842] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-12 20:28:55 +0000] [19840] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-13 01:58:55 +0530] [19834] [INFO] Handling signal: winch
+[2019-05-13 01:58:55 +0530] [19834] [DEBUG] SIGWINCH ignored. Not daemonized
+[2019-05-12 20:28:55 +0000] [19843] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-12 20:28:55 +0000] [19840] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-13 01:58:55 +0530] [19834] [INFO] Handling signal: winch
+[2019-05-12 20:28:55 +0000] [19842] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-13 01:58:55 +0530] [19834] [DEBUG] SIGWINCH ignored. Not daemonized
+[2019-05-12 20:29:02 +0000] [19843] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-12 20:29:02 +0000] [19840] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-12 20:29:02 +0000] [19842] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-13 01:59:02 +0530] [19834] [INFO] Handling signal: winch
+[2019-05-13 01:59:02 +0530] [19834] [DEBUG] SIGWINCH ignored. Not daemonized
+[2019-05-12 20:29:02 +0000] [19843] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-12 20:29:02 +0000] [19840] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-12 20:29:02 +0000] [19842] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-13 01:59:02 +0530] [19834] [INFO] Handling signal: winch
+[2019-05-13 01:59:02 +0530] [19834] [DEBUG] SIGWINCH ignored. Not daemonized
+[2019-05-13 01:59:03 +0530] [19834] [INFO] Handling signal: int
+[2019-05-12 20:29:03 +0000] [19840] [INFO] Worker exiting (pid: 19840)
+[2019-05-12 20:29:03 +0000] [19843] [INFO] Worker exiting (pid: 19843)
+[2019-05-12 20:29:03 +0000] [19842] [INFO] Worker exiting (pid: 19842)
+[2019-05-13 01:59:04 +0530] [19834] [INFO] Shutting down: Master
+[2019-05-13 01:59:43 +0530] [20053] [DEBUG] Current configuration:
+  limit_request_fields: 100
+  do_handshake_on_connect: False
+  post_fork: <function Postfork.post_fork at 0x7f09b1728488>
+  ciphers: TLSv1
+  check_config: False
+  umask: 0
+  errorlog: /root/SRIP-PORTAL/portal/logs/debug.log
+  worker_int: <function WorkerInt.worker_int at 0x7f09b17286a8>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f09b17287b8>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f09b1728c80>
+  proxy_protocol: False
+  syslog_facility: user
+  config: None
+  certfile: None
+  max_requests: 0
+  on_starting: <function OnStarting.on_starting at 0x7f09b1728048>
+  disable_redirect_access_to_syslog: False
+  statsd_host: None
+  spew: False
+  initgroups: False
+  paste: None
+  syslog_addr: udp://localhost:514
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f09b1728d90>
+  reload_engine: auto
+  logconfig: None
+  on_exit: <function OnExit.on_exit at 0x7f09b1728ea0>
+  worker_tmp_dir: None
+  worker_connections: 1000
+  loglevel: debug
+  timeout: 30
+  syslog: False
+  on_reload: <function OnReload.on_reload at 0x7f09b1728158>
+  worker_class: sync
+  daemon: False
+  keyfile: None
+  preload_app: False
+  ca_certs: None
+  sendfile: None
+  forwarded_allow_ips: ['127.0.0.1']
+  pre_fork: <function Prefork.pre_fork at 0x7f09b1728378>
+  proc_name: SRIP_Portal
+  pre_exec: <function PreExec.pre_exec at 0x7f09b17288c8>
+  suppress_ragged_eofs: True
+  capture_output: False
+  limit_request_line: 4094
+  chdir: /root/SRIP-PORTAL/portal
+  raw_env: []
+  pidfile: None
+  group: 27
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-SSL': 'on', 'X-FORWARDED-PROTO': 'https'}
+  pythonpath: None
+  proxy_allow_ips: ['127.0.0.1']
+  raw_paste_global_conf: []
+  graceful_timeout: 30
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  statsd_prefix: 
+  bind: ['0.0.0.0:9000']
+  ssl_version: 2
+  cert_reqs: 0
+  keepalive: 2
+  reload: False
+  reload_extra_files: []
+  workers: 3
+  threads: 1
+  when_ready: <function WhenReady.when_ready at 0x7f09b1728268>
+  child_exit: <function ChildExit.child_exit at 0x7f09b1728b70>
+  backlog: 2048
+  enable_stdio_inheritance: False
+  max_requests_jitter: 0
+  user: 0
+  default_proc_name: portal.wsgi:application
+  reuse_port: False
+  syslog_prefix: None
+  tmp_upload_dir: None
+  limit_request_field_size: 8190
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f09b1728598>
+  post_request: <function PostRequest.post_request at 0x7f09b1728a60>
+  accesslog: None
+  logger_class: gunicorn.glogging.Logger
+  logconfig_dict: {}
+  pre_request: <function PreRequest.pre_request at 0x7f09b17289d8>
+[2019-05-13 01:59:43 +0530] [20053] [INFO] Starting gunicorn 19.9.0
+[2019-05-13 01:59:43 +0530] [20053] [DEBUG] Arbiter booted
+[2019-05-13 01:59:43 +0530] [20053] [INFO] Listening at: http://0.0.0.0:9000 (20053)
+[2019-05-13 01:59:43 +0530] [20053] [INFO] Using worker: sync
+[2019-05-13 01:59:43 +0530] [20059] [INFO] Booting worker with pid: 20059
+[2019-05-13 01:59:43 +0530] [20060] [INFO] Booting worker with pid: 20060
+[2019-05-13 01:59:43 +0530] [20061] [INFO] Booting worker with pid: 20061
+[2019-05-13 01:59:43 +0530] [20053] [DEBUG] 3 workers
+[2019-05-13 01:59:46 +0530] [20053] [INFO] Handling signal: int
+[2019-05-12 20:29:46 +0000] [20061] [INFO] Worker exiting (pid: 20061)
+[2019-05-12 20:29:46 +0000] [20059] [INFO] Worker exiting (pid: 20059)
+[2019-05-12 20:29:46 +0000] [20060] [INFO] Worker exiting (pid: 20060)
+[2019-05-13 01:59:46 +0530] [20053] [INFO] Shutting down: Master
+[2019-05-13 01:59:50 +0530] [20066] [DEBUG] Current configuration:
+  pre_fork: <function Prefork.pre_fork at 0x7f1d9bab2378>
+  chdir: /root/SRIP-PORTAL/portal
+  daemon: False
+  logconfig_dict: {}
+  pre_request: <function PreRequest.pre_request at 0x7f1d9bab29d8>
+  timeout: 30
+  syslog_addr: udp://localhost:514
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f1d9bab2d90>
+  do_handshake_on_connect: False
+  graceful_timeout: 30
+  on_starting: <function OnStarting.on_starting at 0x7f1d9bab2048>
+  limit_request_fields: 100
+  reload_extra_files: []
+  default_proc_name: portal.wsgi:application
+  reload_engine: auto
+  worker_class: sync
+  threads: 1
+  worker_int: <function WorkerInt.worker_int at 0x7f1d9bab26a8>
+  on_exit: <function OnExit.on_exit at 0x7f1d9bab2ea0>
+  accesslog: None
+  statsd_prefix: 
+  group: 27
+  tmp_upload_dir: None
+  paste: None
+  workers: 3
+  disable_redirect_access_to_syslog: False
+  worker_connections: 1000
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f1d9bab27b8>
+  pythonpath: None
+  on_reload: <function OnReload.on_reload at 0x7f1d9bab2158>
+  max_requests_jitter: 0
+  logger_class: gunicorn.glogging.Logger
+  proxy_allow_ips: ['127.0.0.1']
+  proc_name: SRIP_Portal
+  spew: False
+  check_config: False
+  loglevel: debug
+  logconfig: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-SSL': 'on', 'X-FORWARDED-PROTO': 'https'}
+  ca_certs: None
+  suppress_ragged_eofs: True
+  keepalive: 2
+  errorlog: /root/SRIP-PORTAL/portal/logs/debug.log
+  capture_output: False
+  post_request: <function PostRequest.post_request at 0x7f1d9bab2a60>
+  limit_request_field_size: 8190
+  sendfile: None
+  max_requests: 0
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  cert_reqs: 0
+  when_ready: <function WhenReady.when_ready at 0x7f1d9bab2268>
+  raw_env: []
+  child_exit: <function ChildExit.child_exit at 0x7f1d9bab2b70>
+  ssl_version: 2
+  preload_app: False
+  pidfile: None
+  worker_tmp_dir: None
+  user: 0
+  proxy_protocol: False
+  raw_paste_global_conf: []
+  keyfile: None
+  post_fork: <function Postfork.post_fork at 0x7f1d9bab2488>
+  forwarded_allow_ips: ['127.0.0.1']
+  syslog: False
+  bind: ['0.0.0.0:9000']
+  ciphers: TLSv1
+  worker_exit: <function WorkerExit.worker_exit at 0x7f1d9bab2c80>
+  statsd_host: None
+  reuse_port: False
+  backlog: 2048
+  config: None
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f1d9bab2598>
+  pre_exec: <function PreExec.pre_exec at 0x7f1d9bab28c8>
+  reload: False
+  umask: 0
+  certfile: None
+  limit_request_line: 4094
+  initgroups: False
+[2019-05-13 01:59:50 +0530] [20066] [INFO] Starting gunicorn 19.9.0
+[2019-05-13 01:59:50 +0530] [20066] [DEBUG] Arbiter booted
+[2019-05-13 01:59:50 +0530] [20066] [INFO] Listening at: http://0.0.0.0:9000 (20066)
+[2019-05-13 01:59:50 +0530] [20066] [INFO] Using worker: sync
+[2019-05-13 01:59:50 +0530] [20072] [INFO] Booting worker with pid: 20072
+[2019-05-13 01:59:50 +0530] [20073] [INFO] Booting worker with pid: 20073
+[2019-05-13 01:59:50 +0530] [20074] [INFO] Booting worker with pid: 20074
+[2019-05-13 01:59:50 +0530] [20066] [DEBUG] 3 workers
+[2019-05-13 01:59:51 +0530] [20066] [INFO] Handling signal: int
+[2019-05-12 20:29:51 +0000] [20072] [INFO] Worker exiting (pid: 20072)
+[2019-05-12 20:29:51 +0000] [20073] [INFO] Worker exiting (pid: 20073)
+[2019-05-12 20:29:51 +0000] [20074] [INFO] Worker exiting (pid: 20074)
+[2019-05-13 01:59:51 +0530] [20066] [INFO] Shutting down: Master
+[2019-05-13 02:00:11 +0530] [20102] [DEBUG] Current configuration:
+  capture_output: False
+  forwarded_allow_ips: ['127.0.0.1']
+  proxy_protocol: False
+  worker_int: <function WorkerInt.worker_int at 0x7f1d20ff26a8>
+  pre_request: <function PreRequest.pre_request at 0x7f1d20ff29d8>
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  logconfig: None
+  ssl_version: 2
+  timeout: 30
+  statsd_prefix: 
+  on_reload: <function OnReload.on_reload at 0x7f1d20ff2158>
+  user: 0
+  cert_reqs: 0
+  pythonpath: None
+  syslog_prefix: None
+  limit_request_fields: 100
+  bind: ['0.0.0.0:9000']
+  suppress_ragged_eofs: True
+  sendfile: None
+  worker_tmp_dir: None
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f1d20ff27b8>
+  keyfile: None
+  post_request: <function PostRequest.post_request at 0x7f1d20ff2a60>
+  child_exit: <function ChildExit.child_exit at 0x7f1d20ff2b70>
+  logconfig_dict: {}
+  pre_fork: <function Prefork.pre_fork at 0x7f1d20ff2378>
+  limit_request_field_size: 8190
+  post_fork: <function Postfork.post_fork at 0x7f1d20ff2488>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f1d20ff2d90>
+  reload_extra_files: []
+  certfile: None
+  ciphers: TLSv1
+  threads: 1
+  accesslog: None
+  logger_class: gunicorn.glogging.Logger
+  syslog: False
+  do_handshake_on_connect: False
+  proc_name: SRIP_Portal
+  statsd_host: None
+  workers: 3
+  raw_env: []
+  initgroups: False
+  backlog: 2048
+  raw_paste_global_conf: []
+  pre_exec: <function PreExec.pre_exec at 0x7f1d20ff28c8>
+  worker_class: sync
+  worker_exit: <function WorkerExit.worker_exit at 0x7f1d20ff2c80>
+  reuse_port: False
+  reload_engine: auto
+  spew: False
+  preload_app: False
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f1d20ff2598>
+  daemon: False
+  tmp_upload_dir: None
+  loglevel: debug
+  worker_connections: 1000
+  errorlog: /root/SRIP-PORTAL/portal/logs/debug.log
+  paste: None
+  max_requests: 0
+  ca_certs: None
+  syslog_facility: user
+  chdir: /root/SRIP-PORTAL/portal
+  secure_scheme_headers: {'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on', 'X-FORWARDED-PROTOCOL': 'ssl'}
+  default_proc_name: portal.wsgi:application
+  keepalive: 2
+  reload: False
+  disable_redirect_access_to_syslog: False
+  pidfile: None
+  on_starting: <function OnStarting.on_starting at 0x7f1d20ff2048>
+  when_ready: <function WhenReady.when_ready at 0x7f1d20ff2268>
+  on_exit: <function OnExit.on_exit at 0x7f1d20ff2ea0>
+  max_requests_jitter: 0
+  syslog_addr: udp://localhost:514
+  check_config: False
+  limit_request_line: 4094
+  group: 27
+  proxy_allow_ips: ['127.0.0.1']
+  graceful_timeout: 30
+  enable_stdio_inheritance: False
+  config: None
+  umask: 0
+[2019-05-13 02:00:11 +0530] [20102] [INFO] Starting gunicorn 19.9.0
+[2019-05-13 02:00:11 +0530] [20102] [DEBUG] Arbiter booted
+[2019-05-13 02:00:11 +0530] [20102] [INFO] Listening at: http://0.0.0.0:9000 (20102)
+[2019-05-13 02:00:11 +0530] [20102] [INFO] Using worker: sync
+[2019-05-13 02:00:11 +0530] [20107] [INFO] Booting worker with pid: 20107
+[2019-05-13 02:00:11 +0530] [20108] [INFO] Booting worker with pid: 20108
+[2019-05-13 02:00:11 +0530] [20111] [INFO] Booting worker with pid: 20111
+[2019-05-13 02:00:11 +0530] [20102] [DEBUG] 3 workers
+[2019-05-12 20:30:13 +0000] [20111] [DEBUG] GET /
+[2019-05-12 20:30:44 +0000] [20111] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-12 20:30:44 +0000] [20107] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-12 20:30:44 +0000] [20108] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-13 02:00:44 +0530] [20102] [INFO] Handling signal: winch
+[2019-05-13 02:00:44 +0530] [20102] [DEBUG] SIGWINCH ignored. Not daemonized
+[2019-05-12 20:30:44 +0000] [20108] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-12 20:30:44 +0000] [20107] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-12 20:30:44 +0000] [20111] [DEBUG] worker: SIGWINCH ignored.
+[2019-05-13 02:00:44 +0530] [20102] [INFO] Handling signal: winch
+[2019-05-13 02:00:44 +0530] [20102] [DEBUG] SIGWINCH ignored. Not daemonized
+[2019-05-13 02:00:45 +0530] [20102] [INFO] Handling signal: int
+[2019-05-12 20:30:45 +0000] [20111] [INFO] Worker exiting (pid: 20111)
+[2019-05-12 20:30:45 +0000] [20108] [INFO] Worker exiting (pid: 20108)
+[2019-05-12 20:30:45 +0000] [20107] [INFO] Worker exiting (pid: 20107)
+[2019-05-13 02:00:45 +0530] [20102] [INFO] Shutting down: Master
+[2019-05-13 02:01:43 +0530] [20125] [DEBUG] Current configuration:
+  accesslog: None
+  statsd_prefix: 
+  graceful_timeout: 30
+  on_starting: <function OnStarting.on_starting at 0x7efdd3446048>
+  child_exit: <function ChildExit.child_exit at 0x7efdd3446b70>
+  proc_name: SRIP_Portal
+  preload_app: False
+  logconfig_dict: {}
+  worker_int: <function WorkerInt.worker_int at 0x7efdd34466a8>
+  initgroups: False
+  pre_request: <function PreRequest.pre_request at 0x7efdd34469d8>
+  group: 27
+  raw_paste_global_conf: []
+  keepalive: 2
+  errorlog: /root/SRIP-PORTAL/portal/logs/debug.log
+  ca_certs: None
+  post_fork: <function Postfork.post_fork at 0x7efdd3446488>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7efdd34467b8>
+  pre_exec: <function PreExec.pre_exec at 0x7efdd34468c8>
+  max_requests: 0
+  config: None
+  limit_request_line: 4094
+  proxy_allow_ips: ['127.0.0.1']
+  cert_reqs: 0
+  worker_exit: <function WorkerExit.worker_exit at 0x7efdd3446c80>
+  bind: ['0.0.0.0:9000']
+  chdir: /root/SRIP-PORTAL/portal
+  user: 0
+  proxy_protocol: False
+  on_exit: <function OnExit.on_exit at 0x7efdd3446ea0>
+  pythonpath: None
+  worker_connections: 1000
+  suppress_ragged_eofs: True
+  raw_env: []
+  logconfig: None
+  spew: False
+  pidfile: None
+  worker_tmp_dir: None
+  tmp_upload_dir: None
+  certfile: None
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7efdd3446d90>
+  disable_redirect_access_to_syslog: False
+  logger_class: gunicorn.glogging.Logger
+  do_handshake_on_connect: False
+  reload_extra_files: []
+  check_config: False
+  sendfile: None
+  umask: 0
+  on_reload: <function OnReload.on_reload at 0x7efdd3446158>
+  threads: 1
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  capture_output: False
+  ssl_version: 2
+  backlog: 2048
+  loglevel: debug
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  default_proc_name: portal.wsgi:application
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7efdd3446598>
+  reuse_port: False
+  forwarded_allow_ips: ['127.0.0.1']
+  syslog_facility: user
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  paste: None
+  reload_engine: auto
+  max_requests_jitter: 0
+  limit_request_fields: 100
+  workers: 3
+  pre_fork: <function Prefork.pre_fork at 0x7efdd3446378>
+  post_request: <function PostRequest.post_request at 0x7efdd3446a60>
+  ciphers: TLSv1
+  limit_request_field_size: 8190
+  enable_stdio_inheritance: False
+  worker_class: sync
+  timeout: 30
+  when_ready: <function WhenReady.when_ready at 0x7efdd3446268>
+  daemon: True
+  reload: False
+  keyfile: None
+  statsd_host: None
+[2019-05-13 02:01:43 +0530] [20125] [INFO] Starting gunicorn 19.9.0
+[2019-05-13 02:01:43 +0530] [20125] [DEBUG] Arbiter booted
+[2019-05-13 02:01:43 +0530] [20125] [INFO] Listening at: http://0.0.0.0:9000 (20125)
+[2019-05-13 02:01:43 +0530] [20125] [INFO] Using worker: sync
+[2019-05-13 02:01:43 +0530] [20128] [INFO] Booting worker with pid: 20128
+[2019-05-13 02:01:43 +0530] [20129] [INFO] Booting worker with pid: 20129
+[2019-05-13 02:01:43 +0530] [20131] [INFO] Booting worker with pid: 20131
+[2019-05-13 02:01:43 +0530] [20125] [DEBUG] 3 workers
+[2019-05-12 20:32:00 +0000] [20131] [DEBUG] GET /
+[2019-05-12 20:32:18 +0000] [20128] [DEBUG] GET /root/
+[2019-05-12 20:32:28 +0000] [20131] [DEBUG] GET /root/
+[2019-05-12 20:33:58 +0000] [20131] [DEBUG] GET /root/
+[2019-05-12 20:33:59 +0000] [20131] [DEBUG] GET /root/
+[2019-05-12 20:34:01 +0000] [20128] [DEBUG] GET /
+[2019-05-12 20:34:06 +0000] [20131] [DEBUG] GET /static
+[2019-05-12 20:34:11 +0000] [20131] [DEBUG] GET /static
+[2019-05-12 20:34:15 +0000] [20131] [DEBUG] GET /static
+[2019-05-12 20:34:36 +0000] [20128] [DEBUG] GET /static/
+[2019-05-12 20:34:38 +0000] [20129] [DEBUG] GET /static/a
+[2019-05-12 20:34:42 +0000] [20131] [DEBUG] GET /
+[2019-05-12 20:34:42 +0000] [20131] [DEBUG] GET /static/SRIP.png
+[2019-05-12 20:34:43 +0000] [20128] [DEBUG] GET /
+[2019-05-12 20:34:43 +0000] [20128] [DEBUG] GET /static/SRIP.png
+[2019-05-12 20:34:48 +0000] [20128] [DEBUG] GET /static/SRIP.png
+[2019-05-12 20:34:59 +0000] [20128] [DEBUG] GET /static/admin/
+[2019-05-12 20:35:00 +0000] [20128] [DEBUG] GET /static/admin/a
+[2019-05-12 20:35:59 +0000] [20128] [DEBUG] GET /static/admin/a
+[2019-05-12 20:36:00 +0000] [20128] [DEBUG] GET /static/admin/
+[2019-05-12 20:36:17 +0000] [20128] [DEBUG] GET /static/admin/img/search.svg
+[2019-05-12 20:36:18 +0000] [20128] [DEBUG] GET /static/admin/img/search.svg
+[2019-05-12 20:36:19 +0000] [20128] [DEBUG] GET /static/admin/img/search.svg
+[2019-05-12 20:36:59 +0000] [20128] [DEBUG] GET /static/SRIP.png
+[2019-05-12 20:37:14 +0000] [20128] [DEBUG] GET /static/SRIP.png
+[2019-05-12 20:37:14 +0000] [20131] [DEBUG] GET /static/SRIP.png
+[2019-05-12 20:37:23 +0000] [20128] [DEBUG] GET /static/SRIP.png
+[2019-05-12 20:37:23 +0000] [20128] [DEBUG] GET /static/SRIP.png
+[2019-05-12 20:37:34 +0000] [20128] [DEBUG] GET /static/SRIP.png
+[2019-05-12 20:38:16 +0000] [20131] [DEBUG] GET /static/SRIP.png
+[2019-05-12 20:38:17 +0000] [20131] [DEBUG] GET /static/SRIP.png
+[2019-05-12 20:38:18 +0000] [20131] [DEBUG] GET /static/SRIP.png
+[2019-05-12 20:38:30 +0000] [20131] [DEBUG] GET /static/SRIP.png
+[2019-05-12 20:38:54 +0000] [20131] [DEBUG] GET /static/SRIP.png
+[2019-05-12 20:38:59 +0000] [20131] [DEBUG] GET /
+[2019-05-12 20:38:59 +0000] [20128] [DEBUG] GET /static/SRIP.png
+[2019-05-12 20:39:23 +0000] [20131] [DEBUG] GET /
+[2019-05-12 20:39:23 +0000] [20131] [DEBUG] GET /static/SRIP.png
+[2019-05-12 20:39:24 +0000] [20131] [DEBUG] GET /static/SRIP.png
+[2019-05-12 20:39:26 +0000] [20129] [DEBUG] GET /
+[2019-05-12 20:39:26 +0000] [20131] [DEBUG] GET /static/SRIP.png
+[2019-05-12 20:39:26 +0000] [20131] [DEBUG] GET /
+[2019-05-12 20:39:26 +0000] [20128] [DEBUG] GET /static/SRIP.png
+[2019-05-12 20:39:42 +0000] [20128] [DEBUG] GET /
+[2019-05-12 20:39:44 +0000] [20128] [DEBUG] GET /static/SRIP.png
+[2019-05-12 20:39:50 +0000] [20129] [DEBUG] GET /favicon.png
+[2019-05-12 20:40:21 +0000] [20129] [DEBUG] GET /static/SRIP.png
+[2019-05-12 20:40:26 +0000] [20128] [DEBUG] GET /
+[2019-05-12 20:40:26 +0000] [20128] [DEBUG] GET /static/SRIP.png
+[2019-05-12 20:40:27 +0000] [20128] [DEBUG] GET /
+[2019-05-12 20:40:27 +0000] [20128] [DEBUG] GET /static/SRIP.png
+[2019-05-12 20:40:27 +0000] [20131] [DEBUG] GET /
+[2019-05-12 20:40:28 +0000] [20128] [DEBUG] GET /static/SRIP.png
+[2019-05-12 20:41:23 +0000] [20131] [DEBUG] GET /
+[2019-05-12 20:41:23 +0000] [20128] [DEBUG] GET /static/SRIP.png
+[2019-05-12 20:43:03 +0000] [20128] [DEBUG] GET /
+[2019-05-12 20:43:03 +0000] [20128] [DEBUG] GET /static/SRIP.png
+[2019-05-12 20:43:07 +0000] [20128] [DEBUG] GET /login/
+[2019-05-12 20:43:22 +0000] [20129] [DEBUG] POST /login/
+[2019-05-12 20:43:24 +0000] [20131] [DEBUG] GET /login/
+[2019-05-12 20:43:24 +0000] [20131] [DEBUG] GET /
+[2019-05-12 20:43:26 +0000] [20131] [DEBUG] GET /
+[2019-05-12 20:43:26 +0000] [20129] [DEBUG] GET /static/SRIP.png
+[2019-05-12 20:44:53 +0000] [20131] [DEBUG] GET /
+[2019-05-12 20:44:54 +0000] [20129] [DEBUG] GET /
+[2019-05-12 20:44:56 +0000] [20128] [DEBUG] GET /
+[2019-05-12 20:45:07 +0000] [20129] [DEBUG] GET /
+[2019-05-12 20:45:31 +0000] [20128] [DEBUG] GET /
+[2019-05-12 20:45:39 +0000] [20129] [DEBUG] GET /
+[2019-05-12 20:45:41 +0000] [20128] [DEBUG] GET /login/
+[2019-05-12 20:45:45 +0000] [20129] [DEBUG] GET /
+[2019-05-12 20:47:13 +0000] [20128] [DEBUG] GET /
+[2019-05-12 20:47:50 +0000] [20129] [DEBUG] GET /
+[2019-05-12 20:47:57 +0000] [20129] [DEBUG] GET /
+[2019-05-12 20:48:06 +0000] [20131] [DEBUG] GET /favicon.ico
+[2019-05-12 20:48:09 +0000] [20131] [DEBUG] GET /
+[2019-05-12 20:49:13 +0000] [20129] [DEBUG] GET /static/SRIP.png
+[2019-05-12 20:49:16 +0000] [20131] [DEBUG] GET /
+[2019-05-12 20:49:16 +0000] [20128] [DEBUG] GET /static/SRIP.png
+[2019-05-12 20:49:19 +0000] [20129] [DEBUG] GET /
+[2019-05-12 20:49:20 +0000] [20131] [DEBUG] GET /favicon.ico
+[2019-05-12 20:49:39 +0000] [20128] [DEBUG] GET /
+[2019-05-12 20:49:39 +0000] [20128] [DEBUG] GET /static/SRIP.png
+[2019-05-12 20:49:40 +0000] [20129] [DEBUG] GET /favicon.ico
+[2019-05-12 20:49:41 +0000] [20129] [DEBUG] GET /
+[2019-05-12 20:49:41 +0000] [20131] [DEBUG] GET /static/SRIP.png
+[2019-05-12 20:49:41 +0000] [20128] [DEBUG] GET /favicon.ico
+[2019-05-12 20:49:45 +0000] [20131] [DEBUG] GET /
+[2019-05-12 20:49:45 +0000] [20128] [DEBUG] GET /static/SRIP.png
+[2019-05-12 20:49:45 +0000] [20129] [DEBUG] GET /favicon.ico
+[2019-05-12 20:49:46 +0000] [20128] [DEBUG] GET /
+[2019-05-12 20:49:46 +0000] [20128] [DEBUG] GET /static/SRIP.png
+[2019-05-12 20:49:55 +0000] [20131] [DEBUG] GET /
+[2019-05-12 20:49:55 +0000] [20129] [DEBUG] GET /static/SRIP.png
+[2019-05-12 20:50:00 +0000] [20131] [DEBUG] GET /
+[2019-05-12 20:50:00 +0000] [20131] [DEBUG] GET /static/SRIP.png
+[2019-05-12 20:50:00 +0000] [20129] [DEBUG] GET /favicon.ico
+[2019-05-12 20:50:46 +0000] [20128] [DEBUG] GET /
+[2019-05-12 20:50:48 +0000] [20129] [DEBUG] GET /
+[2019-05-12 20:50:48 +0000] [20128] [DEBUG] GET /static/SRIP.png
+[2019-05-12 20:50:49 +0000] [20129] [DEBUG] GET /favicon.ico
+[2019-05-12 20:50:49 +0000] [20131] [DEBUG] GET /
+[2019-05-12 20:50:49 +0000] [20128] [DEBUG] GET /static/SRIP.png
+[2019-05-12 20:50:49 +0000] [20129] [DEBUG] GET /favicon.ico
+[2019-05-12 20:52:51 +0000] [20129] [DEBUG] GET /
+[2019-05-12 20:52:51 +0000] [20128] [DEBUG] GET /static/SRIP.png
+[2019-05-12 20:52:51 +0000] [20131] [DEBUG] GET /favicon.ico
+[2019-05-12 20:52:52 +0000] [20128] [DEBUG] GET /
+[2019-05-12 20:52:52 +0000] [20129] [DEBUG] GET /static/SRIP.png
+[2019-05-12 20:52:53 +0000] [20131] [DEBUG] GET /favicon.ico
+[2019-05-12 20:54:39 +0000] [20129] [DEBUG] GET /
+[2019-05-12 20:54:39 +0000] [20128] [DEBUG] GET /static/SRIP.png
+[2019-05-12 20:54:39 +0000] [20128] [DEBUG] GET /favicon.ico
+[2019-05-12 20:57:52 +0000] [20128] [DEBUG] GET /
+[2019-05-12 20:57:52 +0000] [20129] [DEBUG] GET /static/SRIP.png
+[2019-05-12 20:57:52 +0000] [20131] [DEBUG] GET /favicon.ico
+[2019-05-12 20:57:54 +0000] [20131] [DEBUG] GET /
+[2019-05-12 20:57:54 +0000] [20129] [DEBUG] GET /static/SRIP.png
+[2019-05-12 20:57:55 +0000] [20128] [DEBUG] GET /
+[2019-05-12 20:57:56 +0000] [20128] [DEBUG] GET /
+[2019-05-12 20:57:57 +0000] [20128] [DEBUG] GET /
+[2019-05-12 20:57:57 +0000] [20131] [DEBUG] GET /
+[2019-05-12 20:57:57 +0000] [20128] [DEBUG] GET /
+[2019-05-12 20:57:58 +0000] [20128] [DEBUG] GET /
+[2019-05-12 20:57:58 +0000] [20128] [DEBUG] GET /
+[2019-05-12 20:57:58 +0000] [20129] [DEBUG] GET /
+[2019-05-12 20:58:20 +0000] [20129] [DEBUG] GET /
+[2019-05-12 20:58:20 +0000] [20128] [DEBUG] GET /
+[2019-05-12 20:58:21 +0000] [20131] [DEBUG] GET /
+[2019-05-12 20:58:25 +0000] [20129] [DEBUG] GET /
+[2019-05-12 20:58:26 +0000] [20128] [DEBUG] GET /
+[2019-05-12 20:58:37 +0000] [20128] [DEBUG] GET /
+[2019-05-12 20:58:38 +0000] [20131] [DEBUG] GET /
+[2019-05-12 20:58:39 +0000] [20131] [DEBUG] GET /
+[2019-05-12 20:58:40 +0000] [20128] [DEBUG] GET /
+[2019-05-12 20:58:41 +0000] [20129] [DEBUG] GET /
+[2019-05-12 20:58:41 +0000] [20129] [DEBUG] GET /
+[2019-05-12 20:58:42 +0000] [20129] [DEBUG] GET /login/
+[2019-05-12 20:58:44 +0000] [20131] [DEBUG] GET /login/
+[2019-05-12 21:18:53 +0000] [20131] [DEBUG] GET /
+[2019-05-12 21:18:57 +0000] [20128] [DEBUG] GET /login/
+[2019-05-12 21:19:08 +0000] [20131] [DEBUG] POST /login/
+[2019-05-12 21:23:07 +0000] [20131] [DEBUG] POST /login/
+[2019-05-12 21:23:37 +0000] [20131] [DEBUG] POST /login/
+[2019-05-12 21:24:11 +0000] [20129] [DEBUG] POST /login/
+[2019-05-12 21:24:27 +0000] [20128] [DEBUG] POST /login/
+[2019-05-12 21:24:37 +0000] [20129] [DEBUG] GET /
+[2019-05-12 21:24:40 +0000] [20131] [DEBUG] GET /login/
+[2019-05-12 21:25:03 +0000] [20129] [DEBUG] GET /
+[2019-05-12 21:25:26 +0000] [20129] [DEBUG] GET /
+[2019-05-12 21:25:28 +0000] [20131] [DEBUG] GET /login/
+[2019-05-12 21:25:30 +0000] [20128] [DEBUG] GET /
+[2019-05-13 07:44:15 +0000] [20129] [DEBUG] GET /
+[2019-05-13 07:44:18 +0000] [20131] [DEBUG] GET /login/
+[2019-05-13 07:44:22 +0000] [20131] [DEBUG] GET /login/
+[2019-05-13 07:56:13 +0000] [20131] [DEBUG] GET /
+[2019-05-13 07:56:15 +0000] [20128] [DEBUG] GET /login/
+[2019-05-13 07:56:18 +0000] [20129] [DEBUG] GET /registration/passwordreset.html
+[2019-05-13 07:56:19 +0000] [20131] [DEBUG] GET /registration/passwordreset.html/
+[2019-05-13 07:56:19 +0000] [20129] [DEBUG] GET /login/
+[2019-05-13 07:56:23 +0000] [20129] [DEBUG] POST /login/
+[2019-05-13 07:56:25 +0000] [20129] [DEBUG] GET /login/
+[2019-05-13 07:56:27 +0000] [20129] [DEBUG] GET /
+[2019-05-13 07:56:30 +0000] [20129] [DEBUG] GET /login/
+[2019-05-13 07:56:33 +0000] [20131] [DEBUG] GET /
+[2019-05-13 07:57:08 +0000] [20131] [DEBUG] GET /
+[2019-05-13 07:57:10 +0000] [20128] [DEBUG] GET /login/
+[2019-05-13 07:57:48 +0000] [20128] [DEBUG] GET /
+[2019-05-13 07:57:52 +0000] [20131] [DEBUG] GET /admin
+[2019-05-13 07:57:52 +0000] [20128] [DEBUG] GET /admin/
+[2019-05-13 07:57:52 +0000] [20129] [DEBUG] GET /admin/login/
+[2019-05-13 07:58:01 +0000] [20129] [DEBUG] POST /admin/login/
+[2019-05-13 07:58:04 +0000] [20128] [DEBUG] GET /admin/login/
+[2019-05-13 07:58:06 +0000] [20128] [DEBUG] GET /
+[2019-05-13 07:58:06 +0000] [20129] [DEBUG] GET /
+[2019-05-13 07:58:06 +0000] [20131] [DEBUG] GET /
+[2019-05-13 07:58:07 +0000] [20128] [DEBUG] GET /
+[2019-05-13 08:00:09 +0000] [20128] [DEBUG] GET /
+[2019-05-13 08:00:10 +0000] [20129] [DEBUG] GET /login/
+[2019-05-13 08:00:13 +0000] [20129] [DEBUG] GET /admin
+[2019-05-13 08:00:13 +0000] [20129] [DEBUG] GET /admin/
+[2019-05-13 08:00:14 +0000] [20129] [DEBUG] GET /admin/login/
+[2019-05-13 08:00:18 +0000] [20129] [DEBUG] POST /admin/login/
+[2019-05-13 08:00:19 +0000] [20129] [DEBUG] GET /admin/
+[2019-05-13 08:00:29 +0000] [20128] [DEBUG] GET /admin/auth/user/
+[2019-05-13 08:00:29 +0000] [20131] [DEBUG] Closing connection. 
+[2019-05-13 08:00:29 +0000] [20131] [DEBUG] GET /admin/jsi18n/
+[2019-05-13 08:00:45 +0000] [20128] [DEBUG] GET /admin/auth/user/47/change/
+[2019-05-13 08:00:46 +0000] [20128] [DEBUG] GET /admin/jsi18n/
+[2019-05-13 08:00:58 +0000] [20128] [DEBUG] GET /admin/auth/user/
+[2019-05-13 08:00:59 +0000] [20129] [DEBUG] GET /admin/
+[2019-05-13 08:01:07 +0000] [20129] [DEBUG] GET /admin/portalapp/loggedissue/
+[2019-05-13 08:01:07 +0000] [20131] [DEBUG] GET /admin/jsi18n/
+[2019-05-13 08:01:13 +0000] [20131] [DEBUG] GET /admin/
+[2019-05-13 08:01:13 +0000] [20128] [DEBUG] GET /admin/login/
+[2019-05-13 08:01:13 +0000] [20128] [DEBUG] GET /admin/
+[2019-05-13 08:01:14 +0000] [20128] [DEBUG] GET /
+[2019-05-13 08:01:16 +0000] [20131] [DEBUG] GET /admin/
+[2019-05-13 08:01:19 +0000] [20131] [DEBUG] GET /
+[2019-05-13 08:01:22 +0000] [20128] [DEBUG] GET /
+[2019-05-13 08:01:25 +0000] [20131] [DEBUG] GET /
+[2019-05-13 08:01:25 +0000] [20128] [DEBUG] GET /
+[2019-05-13 08:01:25 +0000] [20128] [DEBUG] GET /
+[2019-05-13 08:01:25 +0000] [20128] [DEBUG] GET /
+[2019-05-13 08:01:30 +0000] [20128] [DEBUG] GET /
+[2019-05-13 08:02:23 +0000] [20128] [DEBUG] GET /
+[2019-05-13 08:04:09 +0000] [20129] [DEBUG] GET /
+[2019-05-13 08:10:55 +0000] [20129] [DEBUG] GET /
+[2019-05-13 08:10:59 +0000] [20129] [DEBUG] GET /admin/
+[2019-05-13 08:11:02 +0000] [20131] [DEBUG] GET /admin/logout/
+[2019-05-13 08:11:03 +0000] [20131] [DEBUG] GET /
+[2019-05-13 08:11:06 +0000] [20131] [DEBUG] GET /
+[2019-05-13 08:11:09 +0000] [20131] [DEBUG] GET /
+[2019-05-13 08:11:11 +0000] [20131] [DEBUG] GET /login/
+[2019-05-13 08:11:14 +0000] [20131] [DEBUG] GET /
+[2019-05-13 08:11:15 +0000] [20131] [DEBUG] GET /
+[2019-05-13 08:11:41 +0000] [20131] [DEBUG] GET /
+[2019-05-13 08:14:12 +0000] [20131] [DEBUG] GET /
+[2019-05-13 08:14:14 +0000] [20128] [DEBUG] GET /login/
+[2019-05-13 08:14:34 +0000] [20128] [DEBUG] GET /admin/
+[2019-05-13 08:14:34 +0000] [20128] [DEBUG] GET /admin/login/
+[2019-05-13 08:14:40 +0000] [20128] [DEBUG] POST /admin/login/
+[2019-05-13 08:14:40 +0000] [20129] [DEBUG] GET /admin/
+[2019-05-13 08:14:45 +0000] [20131] [DEBUG] GET /admin/portalapp/student/
+[2019-05-13 08:14:47 +0000] [20131] [DEBUG] GET /admin/jsi18n/
+[2019-05-13 08:18:55 +0000] [20131] [DEBUG] GET /admin/
+[2019-05-13 08:18:56 +0000] [20128] [DEBUG] GET /admin/login/
+[2019-05-13 08:18:56 +0000] [20128] [DEBUG] GET /admin/
+[2019-05-13 08:18:57 +0000] [20128] [DEBUG] GET /login/
+[2019-05-13 08:18:57 +0000] [20128] [DEBUG] GET /admin/
+[2019-05-13 08:18:58 +0000] [20128] [DEBUG] GET /admin/
+[2019-05-13 08:18:58 +0000] [20128] [DEBUG] GET /admin/portalapp/student/
+[2019-05-13 08:19:03 +0000] [20129] [DEBUG] GET /admin/portalapp/student/55/change/
+[2019-05-13 08:19:06 +0000] [20129] [DEBUG] GET /admin/jsi18n/
+[2019-05-13 08:19:22 +0000] [20129] [DEBUG] GET /admin/portalapp/student/
+[2019-05-13 08:19:23 +0000] [20129] [DEBUG] GET /admin/
+[2019-05-13 08:19:25 +0000] [20129] [DEBUG] GET /admin/
+[2019-05-13 08:19:27 +0000] [20129] [DEBUG] GET /admin/logout/
+[2019-05-13 08:19:27 +0000] [20129] [DEBUG] GET /
+[2019-05-13 08:19:29 +0000] [20131] [DEBUG] GET /login/
+[2019-05-13 08:19:35 +0000] [20128] [DEBUG] GET /login/
+[2019-05-13 08:20:14 +0000] [20128] [DEBUG] POST /login/
+[2019-05-13 08:20:15 +0000] [20131] [DEBUG] GET /
+[2019-05-13 08:20:17 +0000] [20128] [DEBUG] GET /users/parth/
+[2019-05-13 08:20:21 +0000] [20129] [DEBUG] GET /login/
+[2019-05-13 08:20:26 +0000] [20129] [DEBUG] GET /logout/
+[2019-05-13 08:20:26 +0000] [20131] [DEBUG] GET /
+[2019-05-13 08:20:29 +0000] [20129] [DEBUG] GET /
+[2019-05-13 08:27:39 +0000] [20129] [DEBUG] GET /
+[2019-05-13 08:28:29 +0000] [20129] [DEBUG] GET /
+[2019-05-13 08:29:56 +0000] [20129] [DEBUG] GET /
+[2019-05-13 08:31:16 +0000] [20129] [DEBUG] GET /
+[2019-05-13 08:31:17 +0000] [20128] [DEBUG] GET /static/SRIP.png
+[2019-05-13 08:31:27 +0000] [20128] [DEBUG] GET /
+[2019-05-13 08:31:30 +0000] [20129] [DEBUG] GET /login/
+[2019-05-13 08:31:30 +0000] [20131] [DEBUG] Closing connection. 
+[2019-05-13 08:33:41 +0000] [20129] [DEBUG] POST /login/
+[2019-05-13 08:33:43 +0000] [20128] [DEBUG] GET /
+[2019-05-13 08:33:46 +0000] [20129] [DEBUG] GET /users/parth/
+[2019-05-13 08:33:52 +0000] [20129] [DEBUG] GET /portalapp/logissue/
+[2019-05-13 08:33:57 +0000] [20129] [DEBUG] GET /portalapp/report/
+[2019-05-13 08:34:44 +0000] [20129] [DEBUG] GET /
+[2019-05-13 08:37:49 +0000] [20128] [DEBUG] GET /
+[2019-05-13 08:37:52 +0000] [20128] [DEBUG] GET /login/
+[2019-05-13 08:38:36 +0000] [20128] [DEBUG] POST /login/
+[2019-05-13 08:41:11 +0000] [20131] [DEBUG] POST /login/
+[2019-05-13 08:41:12 +0000] [20128] [DEBUG] GET /
+[2019-05-13 08:41:14 +0000] [20128] [DEBUG] GET /users/arushighadiya/
+[2019-05-13 08:41:18 +0000] [20129] [DEBUG] GET /portalapp/logissue/
+[2019-05-13 08:41:21 +0000] [20131] [DEBUG] GET /portalapp/report/
+[2019-05-13 08:41:23 +0000] [20129] [DEBUG] GET /portalapp/uploadhandle/
+[2019-05-13 08:41:27 +0000] [20129] [DEBUG] GET /logout/
+[2019-05-13 08:41:27 +0000] [20128] [DEBUG] GET /
+[2019-05-13 08:41:35 +0000] [20129] [DEBUG] GET /
+[2019-05-13 08:41:38 +0000] [20131] [DEBUG] GET /login/
+[2019-05-13 08:41:48 +0000] [20131] [DEBUG] POST /login/
+[2019-05-13 08:41:48 +0000] [20131] [DEBUG] GET /
+[2019-05-13 08:41:52 +0000] [20129] [DEBUG] GET /portalapp/logissue/
+[2019-05-13 08:41:58 +0000] [20129] [DEBUG] POST /portalapp/logissue/
+[2019-05-13 08:42:02 +0000] [20128] [DEBUG] GET /users/parth/
+[2019-05-13 08:42:05 +0000] [20131] [DEBUG] GET /portalapp/logissue/
+[2019-05-13 08:42:09 +0000] [20128] [DEBUG] POST /portalapp/logissue/
+[2019-05-13 08:42:10 +0000] [20129] [DEBUG] GET /
+[2019-05-13 08:42:12 +0000] [20128] [DEBUG] GET /users/parth/
+[2019-05-13 08:42:42 +0000] [20131] [DEBUG] GET /
+[2019-05-13 08:42:44 +0000] [20129] [DEBUG] GET /login/
+[2019-05-13 08:42:47 +0000] [20128] [DEBUG] GET /registration/passwordreset.html
+[2019-05-13 08:42:47 +0000] [20131] [DEBUG] GET /registration/passwordreset.html/
+[2019-05-13 08:42:51 +0000] [20131] [DEBUG] GET /login/
+[2019-05-13 08:45:19 +0000] [20128] [DEBUG] GET /registration/passwordreset.html/
+[2019-05-13 08:45:37 +0000] [20128] [DEBUG] GET /registration/passwordreset.html/
+[2019-05-13 08:46:40 +0000] [20129] [DEBUG] GET /login/
+[2019-05-13 08:46:42 +0000] [20129] [DEBUG] GET /
+[2019-05-13 08:47:17 +0000] [20131] [DEBUG] GET /login/
+[2019-05-13 08:49:03 +0000] [20131] [DEBUG] GET /
+[2019-05-13 08:49:05 +0000] [20128] [DEBUG] GET /login/
+[2019-05-13 08:49:12 +0000] [20131] [DEBUG] POST /login/
+[2019-05-13 08:49:12 +0000] [20129] [DEBUG] GET /
+[2019-05-13 08:49:20 +0000] [20128] [DEBUG] GET /login/
+[2019-05-13 08:49:25 +0000] [20128] [DEBUG] GET /logout/
+[2019-05-13 08:49:25 +0000] [20131] [DEBUG] GET /
+[2019-05-13 08:49:33 +0000] [20131] [DEBUG] GET /
+[2019-05-13 09:03:37 +0000] [20131] [DEBUG] GET /
+[2019-05-13 09:03:39 +0000] [20129] [DEBUG] GET /login/
+[2019-05-13 09:03:48 +0000] [20129] [DEBUG] POST /login/
+[2019-05-13 09:04:04 +0000] [20131] [DEBUG] GET /
+[2019-05-13 09:17:44 +0000] [20128] [DEBUG] GET /
+[2019-05-13 09:17:45 +0000] [20128] [DEBUG] GET /
+[2019-05-13 09:20:25 +0000] [20128] [DEBUG] GET /login/
+[2019-05-13 09:20:46 +0000] [20131] [DEBUG] POST /login/
+[2019-05-13 09:24:22 +0000] [20128] [DEBUG] GET /
+[2019-05-13 09:24:24 +0000] [20128] [DEBUG] GET /login/
+[2019-05-13 09:24:26 +0000] [20128] [DEBUG] GET /
+[2019-05-13 09:24:29 +0000] [20128] [DEBUG] GET /login/
+[2019-05-13 09:24:37 +0000] [20128] [DEBUG] GET /login/
+[2019-05-13 09:24:39 +0000] [20128] [DEBUG] GET /
+[2019-05-13 09:24:39 +0000] [20128] [DEBUG] GET /
+[2019-05-13 09:24:40 +0000] [20128] [DEBUG] GET /
+[2019-05-13 09:26:29 +0000] [20129] [DEBUG] GET /
+[2019-05-13 09:27:12 +0000] [20129] [DEBUG] GET /
+[2019-05-13 09:27:20 +0000] [20129] [DEBUG] GET /login/
+[2019-05-13 09:27:31 +0000] [20131] [DEBUG] POST /login/
+[2019-05-13 09:27:31 +0000] [20131] [DEBUG] GET /
+[2019-05-13 09:27:33 +0000] [20128] [DEBUG] GET /logout/
+[2019-05-13 09:27:34 +0000] [20131] [DEBUG] GET /
+[2019-05-13 09:27:36 +0000] [20131] [DEBUG] GET /
+[2019-05-13 09:27:41 +0000] [20131] [DEBUG] GET /
+[2019-05-13 09:27:45 +0000] [20129] [DEBUG] GET /login/
+[2019-05-13 09:27:50 +0000] [20128] [DEBUG] GET /login/
+[2019-05-13 09:27:53 +0000] [20131] [DEBUG] GET /login/
+[2019-05-13 09:27:56 +0000] [20129] [DEBUG] GET /login/
+[2019-05-13 09:28:02 +0000] [20129] [DEBUG] POST /login/
+[2019-05-13 09:28:02 +0000] [20128] [DEBUG] GET /
+[2019-05-13 09:28:05 +0000] [20128] [DEBUG] GET /users/parth/
+[2019-05-13 09:28:11 +0000] [20131] [DEBUG] GET /portalapp/logissue/
+[2019-05-13 09:28:14 +0000] [20131] [DEBUG] GET /portalapp/report/
+[2019-05-13 09:28:18 +0000] [20128] [DEBUG] GET /login/
+[2019-05-13 09:30:07 +0000] [20128] [DEBUG] POST /login/
+[2019-05-13 09:30:08 +0000] [20128] [DEBUG] GET /
+[2019-05-13 09:30:10 +0000] [20128] [DEBUG] GET /users/parth/
+[2019-05-13 09:30:14 +0000] [20128] [DEBUG] GET /logout/
+[2019-05-13 09:30:14 +0000] [20128] [DEBUG] GET /
+[2019-05-13 09:30:17 +0000] [20128] [DEBUG] GET /
+[2019-05-13 09:30:20 +0000] [20128] [DEBUG] GET /admin/
+[2019-05-13 09:30:20 +0000] [20128] [DEBUG] GET /admin/login/
+[2019-05-13 09:30:30 +0000] [20128] [DEBUG] POST /admin/login/
+[2019-05-13 09:30:31 +0000] [20128] [DEBUG] GET /admin/
+[2019-05-13 09:30:33 +0000] [20131] [DEBUG] GET /admin/portalapp/student/
+[2019-05-13 09:30:33 +0000] [20128] [DEBUG] GET /admin/jsi18n/
+[2019-05-13 09:30:39 +0000] [20129] [DEBUG] GET /
+[2019-05-13 09:30:39 +0000] [20129] [DEBUG] GET /
+[2019-05-13 09:30:50 +0000] [20131] [DEBUG] GET /
+[2019-05-13 09:30:50 +0000] [20129] [DEBUG] GET /
+[2019-05-13 09:30:54 +0000] [20129] [DEBUG] GET /login/
+[2019-05-13 09:31:31 +0000] [20129] [DEBUG] GET /admin/portalapp/student/
+[2019-05-13 09:31:31 +0000] [20131] [DEBUG] GET /admin/jsi18n/
+[2019-05-13 09:31:40 +0000] [20131] [DEBUG] GET /
+[2019-05-13 09:31:41 +0000] [20131] [DEBUG] GET /admin/
+[2019-05-13 09:31:41 +0000] [20129] [DEBUG] GET /admin/
+[2019-05-13 09:31:43 +0000] [20128] [DEBUG] GET /admin/logout/
+[2019-05-13 09:31:44 +0000] [20129] [DEBUG] GET /
+[2019-05-13 09:39:35 +0000] [20131] [DEBUG] POST /login/
+[2019-05-13 09:39:35 +0000] [20128] [DEBUG] GET /
+[2019-05-13 09:39:40 +0000] [20128] [DEBUG] GET /logout/
+[2019-05-13 09:39:40 +0000] [20128] [DEBUG] GET /
+[2019-05-13 09:39:41 +0000] [20129] [DEBUG] GET /login/
+[2019-05-13 09:40:16 +0000] [20128] [DEBUG] GET /login/
+[2019-05-13 09:40:37 +0000] [20128] [DEBUG] POST /login/
+[2019-05-13 09:40:37 +0000] [20128] [DEBUG] GET /
+[2019-05-13 09:40:42 +0000] [20129] [DEBUG] GET /logout/
+[2019-05-13 09:40:42 +0000] [20131] [DEBUG] GET /
+[2019-05-13 09:40:48 +0000] [20131] [DEBUG] GET /login/
+[2019-05-13 09:41:13 +0000] [20129] [DEBUG] POST /login/
+[2019-05-13 09:41:37 +0000] [20129] [DEBUG] POST /login/
+[2019-05-13 09:41:37 +0000] [20131] [DEBUG] GET /
+[2019-05-13 09:41:40 +0000] [20131] [DEBUG] GET /logout/
+[2019-05-13 09:41:41 +0000] [20128] [DEBUG] GET /
+[2019-05-13 09:41:51 +0000] [20128] [DEBUG] GET /login/
+[2019-05-13 09:42:10 +0000] [20131] [DEBUG] POST /login/
+[2019-05-13 09:42:11 +0000] [20131] [DEBUG] GET /
+[2019-05-13 09:42:14 +0000] [20131] [DEBUG] GET /logout/
+[2019-05-13 09:42:14 +0000] [20131] [DEBUG] GET /
+[2019-05-13 09:42:19 +0000] [20131] [DEBUG] GET /login/
+[2019-05-13 09:42:34 +0000] [20131] [DEBUG] POST /login/
+[2019-05-13 09:42:35 +0000] [20131] [DEBUG] GET /
+[2019-05-13 09:42:37 +0000] [20131] [DEBUG] GET /logout/
+[2019-05-13 09:42:37 +0000] [20129] [DEBUG] GET /
+[2019-05-13 09:42:44 +0000] [20128] [DEBUG] GET /login/
+[2019-05-13 09:43:06 +0000] [20131] [DEBUG] POST /login/
+[2019-05-13 09:43:20 +0000] [20131] [DEBUG] POST /login/
+[2019-05-13 09:44:38 +0000] [20131] [DEBUG] GET /
+[2019-05-13 09:44:38 +0000] [20131] [DEBUG] GET /
+[2019-05-13 09:44:40 +0000] [20131] [DEBUG] GET /login/
+[2019-05-13 09:44:45 +0000] [20128] [DEBUG] GET /admin/
+[2019-05-13 09:44:45 +0000] [20129] [DEBUG] GET /admin/login/
+[2019-05-13 09:44:45 +0000] [20131] [DEBUG] GET /admin/
+[2019-05-13 09:44:45 +0000] [20129] [DEBUG] GET /admin/login/
+[2019-05-13 09:44:51 +0000] [20131] [DEBUG] POST /admin/login/
+[2019-05-13 09:44:51 +0000] [20128] [DEBUG] GET /admin/
+[2019-05-13 09:44:54 +0000] [20131] [DEBUG] GET /admin/portalapp/student/
+[2019-05-13 09:44:54 +0000] [20131] [DEBUG] GET /admin/jsi18n/
+[2019-05-13 09:45:16 +0000] [20128] [DEBUG] GET /admin/
+[2019-05-13 09:45:19 +0000] [20129] [DEBUG] GET /admin/auth/user/
+[2019-05-13 09:45:19 +0000] [20129] [DEBUG] GET /admin/jsi18n/
+[2019-05-13 09:45:27 +0000] [20128] [DEBUG] GET /admin/
+[2019-05-13 09:45:29 +0000] [20128] [DEBUG] GET /admin/auth/group/
+[2019-05-13 09:45:29 +0000] [20128] [DEBUG] GET /admin/jsi18n/
+[2019-05-13 09:45:31 +0000] [20128] [DEBUG] GET /admin/
+[2019-05-13 09:45:33 +0000] [20131] [DEBUG] GET /admin/portalapp/loggedissue/
+[2019-05-13 09:45:33 +0000] [20131] [DEBUG] GET /admin/jsi18n/
+[2019-05-13 09:45:37 +0000] [20129] [DEBUG] GET /admin/
+[2019-05-13 09:45:42 +0000] [20128] [DEBUG] GET /admin/logout/
+[2019-05-13 09:45:42 +0000] [20131] [DEBUG] GET /
+[2019-05-13 09:50:18 +0000] [20129] [DEBUG] POST /login/
+[2019-05-13 09:50:58 +0000] [20128] [DEBUG] GET /
+[2019-05-13 09:50:59 +0000] [20129] [DEBUG] GET /
+[2019-05-13 09:51:04 +0000] [20129] [DEBUG] GET /admin/
+[2019-05-13 09:51:04 +0000] [20129] [DEBUG] GET /admin/login/
+[2019-05-13 09:51:05 +0000] [20129] [DEBUG] GET /admin/
+[2019-05-13 09:51:05 +0000] [20129] [DEBUG] GET /admin/login/
+[2019-05-13 09:51:14 +0000] [20129] [DEBUG] GET /
+[2019-05-13 09:51:15 +0000] [20129] [DEBUG] POST /admin/login/
+[2019-05-13 09:51:15 +0000] [20131] [DEBUG] GET /admin/
+[2019-05-13 09:51:16 +0000] [20128] [DEBUG] GET /logout/
+[2019-05-13 09:51:16 +0000] [20129] [DEBUG] GET /
+[2019-05-13 09:51:19 +0000] [20129] [DEBUG] GET /admin/auth/user/
+[2019-05-13 09:51:19 +0000] [20129] [DEBUG] GET /admin/jsi18n/
+[2019-05-13 09:51:20 +0000] [20129] [DEBUG] GET /admin
+[2019-05-13 09:51:20 +0000] [20129] [DEBUG] GET /admin/
+[2019-05-13 09:51:20 +0000] [20129] [DEBUG] GET /admin/login/
+[2019-05-13 09:51:21 +0000] [20129] [DEBUG] GET /admin/
+[2019-05-13 09:51:24 +0000] [20129] [DEBUG] GET /admin/portalapp/student/
+[2019-05-13 09:51:24 +0000] [20129] [DEBUG] GET /admin/jsi18n/
+[2019-05-13 09:51:25 +0000] [20128] [DEBUG] POST /admin/login/
+[2019-05-13 09:51:25 +0000] [20131] [DEBUG] GET /admin/
+[2019-05-13 09:51:33 +0000] [20131] [DEBUG] GET /admin/portalapp/student/
+[2019-05-13 09:51:33 +0000] [20131] [DEBUG] GET /admin/jsi18n/
+[2019-05-13 09:51:55 +0000] [20129] [DEBUG] GET /admin/portalapp/student/7/change/
+[2019-05-13 09:51:55 +0000] [20129] [DEBUG] GET /admin/jsi18n/
+[2019-05-13 09:52:18 +0000] [20129] [DEBUG] GET /admin/auth/user/8/change/
+[2019-05-13 09:52:18 +0000] [20129] [DEBUG] GET /admin/jsi18n/
+[2019-05-13 09:52:37 +0000] [20129] [DEBUG] POST /admin/auth/user/8/change/
+[2019-05-13 09:52:48 +0000] [20129] [DEBUG] POST /admin/portalapp/student/7/change/
+[2019-05-13 09:52:48 +0000] [20128] [DEBUG] GET /admin/portalapp/student/
+[2019-05-13 09:52:48 +0000] [20128] [DEBUG] GET /admin/jsi18n/
+[2019-05-13 09:53:12 +0000] [20129] [DEBUG] POST /login/
+[2019-05-13 09:53:21 +0000] [20128] [DEBUG] POST /login/
+[2019-05-13 09:53:28 +0000] [20128] [DEBUG] POST /login/
+[2019-05-13 09:53:28 +0000] [20128] [DEBUG] GET /
+[2019-05-13 09:53:31 +0000] [20128] [DEBUG] GET /logout/
+[2019-05-13 09:53:31 +0000] [20128] [DEBUG] GET /
+[2019-05-13 09:53:44 +0000] [20128] [DEBUG] GET /admin/portalapp/student/7/change/
+[2019-05-13 09:53:44 +0000] [20128] [DEBUG] GET /admin/jsi18n/
+[2019-05-13 09:53:46 +0000] [20131] [DEBUG] GET /admin/auth/user/8/change/
+[2019-05-13 09:53:47 +0000] [20128] [DEBUG] GET /admin/jsi18n/
+[2019-05-13 09:53:53 +0000] [20129] [DEBUG] POST /admin/auth/user/8/change/
+[2019-05-13 09:53:57 +0000] [20131] [DEBUG] POST /admin/portalapp/student/7/change/
+[2019-05-13 09:53:57 +0000] [20131] [DEBUG] GET /admin/portalapp/student/
+[2019-05-13 09:53:57 +0000] [20131] [DEBUG] GET /admin/jsi18n/
+[2019-05-13 09:54:01 +0000] [20128] [DEBUG] GET /login/
+[2019-05-13 09:54:15 +0000] [20129] [DEBUG] POST /login/
+[2019-05-13 09:54:16 +0000] [20131] [DEBUG] GET /
+[2019-05-13 09:54:21 +0000] [20129] [DEBUG] GET /logout/
+[2019-05-13 09:54:21 +0000] [20131] [DEBUG] GET /
+[2019-05-13 09:54:22 +0000] [20128] [DEBUG] GET /login/
+[2019-05-13 09:54:41 +0000] [20128] [DEBUG] POST /login/
+[2019-05-13 09:54:41 +0000] [20128] [DEBUG] GET /
+[2019-05-13 09:54:44 +0000] [20131] [DEBUG] GET /logout/
+[2019-05-13 09:54:44 +0000] [20131] [DEBUG] GET /
+[2019-05-13 09:54:45 +0000] [20131] [DEBUG] GET /login/
+[2019-05-13 09:54:59 +0000] [20131] [DEBUG] POST /login/
+[2019-05-13 09:55:00 +0000] [20131] [DEBUG] GET /
+[2019-05-13 09:55:04 +0000] [20129] [DEBUG] GET /logout/
+[2019-05-13 09:55:04 +0000] [20131] [DEBUG] GET /
+[2019-05-13 09:55:13 +0000] [20128] [DEBUG] GET /login/
+[2019-05-13 09:55:20 +0000] [20128] [DEBUG] POST /login/
+[2019-05-13 09:55:20 +0000] [20131] [DEBUG] GET /
+[2019-05-13 09:55:23 +0000] [20129] [DEBUG] GET /logout/
+[2019-05-13 09:55:24 +0000] [20128] [DEBUG] GET /
+[2019-05-13 09:55:41 +0000] [20131] [DEBUG] GET /login/
+[2019-05-13 09:56:14 +0000] [20131] [DEBUG] POST /login/
+[2019-05-13 09:56:15 +0000] [20128] [DEBUG] GET /
+[2019-05-13 09:56:17 +0000] [20128] [DEBUG] GET /login/
+[2019-05-13 09:56:19 +0000] [20128] [DEBUG] GET /login/
+[2019-05-13 09:56:30 +0000] [20128] [DEBUG] POST /login/
+[2019-05-13 09:56:31 +0000] [20128] [DEBUG] GET /
+[2019-05-13 09:56:33 +0000] [20128] [DEBUG] GET /login/
+[2019-05-13 09:56:35 +0000] [20129] [DEBUG] GET /login/
+[2019-05-13 09:56:42 +0000] [20129] [DEBUG] POST /login/
+[2019-05-13 09:56:43 +0000] [20128] [DEBUG] GET /
+[2019-05-13 09:56:45 +0000] [20128] [DEBUG] GET /logout/
+[2019-05-13 09:56:45 +0000] [20131] [DEBUG] GET /
+[2019-05-13 09:56:51 +0000] [20129] [DEBUG] GET /admin/portalapp/student/
+[2019-05-13 09:56:51 +0000] [20129] [DEBUG] GET /admin/jsi18n/
+[2019-05-13 09:57:19 +0000] [20129] [DEBUG] GET /login/
+[2019-05-13 09:57:28 +0000] [20129] [DEBUG] POST /login/
+[2019-05-13 09:57:29 +0000] [20128] [DEBUG] GET /
+[2019-05-13 09:57:31 +0000] [20128] [DEBUG] GET /logout/
+[2019-05-13 09:57:31 +0000] [20131] [DEBUG] GET /
+[2019-05-13 09:57:40 +0000] [20128] [DEBUG] GET /login/
+[2019-05-13 09:57:47 +0000] [20129] [DEBUG] POST /login/
+[2019-05-13 09:57:47 +0000] [20129] [DEBUG] GET /
+[2019-05-13 09:57:50 +0000] [20131] [DEBUG] GET /logout/
+[2019-05-13 09:57:50 +0000] [20128] [DEBUG] GET /
+[2019-05-13 09:57:56 +0000] [20128] [DEBUG] GET /login/
+[2019-05-13 09:58:03 +0000] [20128] [DEBUG] POST /login/
+[2019-05-13 09:58:04 +0000] [20131] [DEBUG] GET /
+[2019-05-13 09:58:06 +0000] [20128] [DEBUG] GET /logout/
+[2019-05-13 09:58:06 +0000] [20128] [DEBUG] GET /
+[2019-05-13 09:58:12 +0000] [20131] [DEBUG] GET /login/
+[2019-05-13 09:58:18 +0000] [20129] [DEBUG] POST /login/
+[2019-05-13 09:58:19 +0000] [20128] [DEBUG] GET /
+[2019-05-13 09:58:21 +0000] [20128] [DEBUG] GET /logout/
+[2019-05-13 09:58:21 +0000] [20131] [DEBUG] GET /
+[2019-05-13 09:58:26 +0000] [20128] [DEBUG] GET /login/
+[2019-05-13 09:58:33 +0000] [20131] [DEBUG] POST /login/
+[2019-05-13 09:58:33 +0000] [20129] [DEBUG] GET /
+[2019-05-13 09:58:35 +0000] [20131] [DEBUG] GET /logout/
+[2019-05-13 09:58:35 +0000] [20131] [DEBUG] GET /
+[2019-05-13 09:58:41 +0000] [20131] [DEBUG] GET /login/
+[2019-05-13 09:58:48 +0000] [20131] [DEBUG] POST /login/
+[2019-05-13 09:58:48 +0000] [20128] [DEBUG] GET /
+[2019-05-13 09:59:00 +0000] [20131] [DEBUG] GET /logout/
+[2019-05-13 09:59:00 +0000] [20129] [DEBUG] GET /
+[2019-05-13 09:59:07 +0000] [20131] [DEBUG] GET /login/
+[2019-05-13 09:59:15 +0000] [20128] [DEBUG] POST /login/
+[2019-05-13 09:59:16 +0000] [20129] [DEBUG] GET /
+[2019-05-13 09:59:18 +0000] [20131] [DEBUG] GET /logout/
+[2019-05-13 09:59:18 +0000] [20129] [DEBUG] GET /
+[2019-05-13 09:59:24 +0000] [20129] [DEBUG] GET /login/
+[2019-05-13 09:59:30 +0000] [20128] [DEBUG] POST /login/
+[2019-05-13 09:59:30 +0000] [20129] [DEBUG] GET /
+[2019-05-13 09:59:32 +0000] [20129] [DEBUG] GET /logout/
+[2019-05-13 09:59:32 +0000] [20131] [DEBUG] GET /
+[2019-05-13 09:59:41 +0000] [20131] [DEBUG] GET /login/
+[2019-05-13 09:59:48 +0000] [20131] [DEBUG] POST /login/
+[2019-05-13 09:59:49 +0000] [20131] [DEBUG] GET /
+[2019-05-13 09:59:51 +0000] [20128] [DEBUG] GET /logout/
+[2019-05-13 09:59:51 +0000] [20131] [DEBUG] GET /
+[2019-05-13 09:59:56 +0000] [20131] [DEBUG] GET /login/
+[2019-05-13 10:00:03 +0000] [20129] [DEBUG] POST /login/
+[2019-05-13 10:00:03 +0000] [20128] [DEBUG] GET /
+[2019-05-13 10:00:08 +0000] [20128] [DEBUG] GET /logout/
+[2019-05-13 10:00:08 +0000] [20131] [DEBUG] GET /
+[2019-05-13 10:00:14 +0000] [20131] [DEBUG] GET /login/
+[2019-05-13 10:00:18 +0000] [20128] [DEBUG] GET /admin/portalapp/student/
+[2019-05-13 10:00:19 +0000] [20128] [DEBUG] GET /admin/jsi18n/
+[2019-05-13 10:00:20 +0000] [20128] [DEBUG] GET /admin/portalapp/student/
+[2019-05-13 10:00:20 +0000] [20129] [DEBUG] GET /admin/jsi18n/
+[2019-05-13 10:00:20 +0000] [20129] [DEBUG] POST /login/
+[2019-05-13 10:00:21 +0000] [20128] [DEBUG] GET /
+[2019-05-13 10:00:21 +0000] [20128] [DEBUG] GET /admin/portalapp/student/
+[2019-05-13 10:00:22 +0000] [20129] [DEBUG] GET /admin/jsi18n/
+[2019-05-13 10:00:22 +0000] [20129] [DEBUG] GET /admin/portalapp/student/
+[2019-05-13 10:00:22 +0000] [20129] [DEBUG] GET /admin/jsi18n/
+[2019-05-13 10:00:22 +0000] [20129] [DEBUG] GET /admin/portalapp/student/
+[2019-05-13 10:00:22 +0000] [20129] [DEBUG] GET /admin/portalapp/student/
+[2019-05-13 10:00:22 +0000] [20129] [DEBUG] GET /admin/jsi18n/
+[2019-05-13 10:00:22 +0000] [20129] [DEBUG] GET /admin/portalapp/student/
+[2019-05-13 10:00:23 +0000] [20129] [DEBUG] GET /admin/jsi18n/
+[2019-05-13 10:00:23 +0000] [20129] [DEBUG] GET /logout/
+[2019-05-13 10:00:23 +0000] [20131] [DEBUG] GET /
+[2019-05-13 10:00:28 +0000] [20128] [DEBUG] GET /login/
+[2019-05-13 10:00:35 +0000] [20128] [DEBUG] POST /login/
+[2019-05-13 10:00:36 +0000] [20131] [DEBUG] GET /
+[2019-05-13 10:00:38 +0000] [20129] [DEBUG] GET /logout/
+[2019-05-13 10:00:38 +0000] [20129] [DEBUG] GET /
+[2019-05-13 10:00:43 +0000] [20128] [DEBUG] GET /login/
+[2019-05-13 10:00:49 +0000] [20128] [DEBUG] POST /login/
+[2019-05-13 10:00:49 +0000] [20131] [DEBUG] GET /
+[2019-05-13 10:00:51 +0000] [20129] [DEBUG] GET /logout/
+[2019-05-13 10:00:51 +0000] [20128] [DEBUG] GET /
+[2019-05-13 10:00:56 +0000] [20128] [DEBUG] GET /login/
+[2019-05-13 10:01:02 +0000] [20128] [DEBUG] POST /login/
+[2019-05-13 10:01:03 +0000] [20128] [DEBUG] GET /
+[2019-05-13 10:01:04 +0000] [20128] [DEBUG] GET /logout/
+[2019-05-13 10:01:05 +0000] [20128] [DEBUG] GET /
+[2019-05-13 10:01:09 +0000] [20128] [DEBUG] GET /login/
+[2019-05-13 10:01:17 +0000] [20128] [DEBUG] POST /login/
+[2019-05-13 10:01:18 +0000] [20128] [DEBUG] GET /
+[2019-05-13 10:01:20 +0000] [20129] [DEBUG] GET /logout/
+[2019-05-13 10:01:21 +0000] [20129] [DEBUG] GET /
+[2019-05-13 10:01:26 +0000] [20128] [DEBUG] GET /login/
+[2019-05-13 10:01:33 +0000] [20131] [DEBUG] POST /login/
+[2019-05-13 10:01:34 +0000] [20131] [DEBUG] GET /
+[2019-05-13 10:01:36 +0000] [20129] [DEBUG] GET /logout/
+[2019-05-13 10:01:36 +0000] [20131] [DEBUG] GET /
+[2019-05-13 10:01:42 +0000] [20129] [DEBUG] GET /login/
+[2019-05-13 10:01:50 +0000] [20131] [DEBUG] POST /login/
+[2019-05-13 10:01:50 +0000] [20128] [DEBUG] GET /
+[2019-05-13 10:01:52 +0000] [20128] [DEBUG] GET /logout/
+[2019-05-13 10:01:52 +0000] [20128] [DEBUG] GET /
+[2019-05-13 10:01:59 +0000] [20128] [DEBUG] GET /login/
+[2019-05-13 10:02:10 +0000] [20129] [DEBUG] POST /login/
+[2019-05-13 10:02:10 +0000] [20128] [DEBUG] GET /
+[2019-05-13 10:02:13 +0000] [20128] [DEBUG] GET /logout/
+[2019-05-13 10:02:13 +0000] [20131] [DEBUG] GET /
+[2019-05-13 10:02:19 +0000] [20128] [DEBUG] GET /login/
+[2019-05-13 10:02:27 +0000] [20128] [DEBUG] POST /login/
+[2019-05-13 10:02:28 +0000] [20128] [DEBUG] GET /
+[2019-05-13 10:02:30 +0000] [20128] [DEBUG] GET /logout/
+[2019-05-13 10:02:30 +0000] [20129] [DEBUG] GET /
+[2019-05-13 10:02:48 +0000] [20128] [DEBUG] GET /login/
+[2019-05-13 10:03:08 +0000] [20128] [DEBUG] POST /login/
+[2019-05-13 10:03:18 +0000] [20128] [DEBUG] POST /login/
+[2019-05-13 10:04:05 +0000] [20129] [DEBUG] POST /login/
+[2019-05-13 10:04:05 +0000] [20128] [DEBUG] GET /
+[2019-05-13 10:04:08 +0000] [20131] [DEBUG] GET /logout/
+[2019-05-13 10:04:08 +0000] [20128] [DEBUG] GET /
+[2019-05-13 10:05:32 +0000] [20129] [DEBUG] GET /login/
+[2019-05-13 10:05:51 +0000] [20129] [DEBUG] POST /login/
+[2019-05-13 10:05:52 +0000] [20129] [DEBUG] GET /
+[2019-05-13 10:05:54 +0000] [20129] [DEBUG] GET /logout/
+[2019-05-13 10:05:54 +0000] [20129] [DEBUG] GET /
+[2019-05-13 10:06:12 +0000] [20128] [DEBUG] GET /admin/logout/
+[2019-05-13 10:06:12 +0000] [20129] [DEBUG] GET /
+[2019-05-13 10:06:17 +0000] [20131] [DEBUG] GET /login/
+[2019-05-13 10:06:39 +0000] [20131] [DEBUG] POST /login/
+[2019-05-13 10:06:40 +0000] [20131] [DEBUG] GET /
+[2019-05-13 10:06:42 +0000] [20128] [DEBUG] GET /logout/
+[2019-05-13 10:06:42 +0000] [20129] [DEBUG] GET /
+[2019-05-13 10:06:48 +0000] [20129] [DEBUG] GET /login/
+[2019-05-13 10:06:54 +0000] [20129] [DEBUG] POST /login/
+[2019-05-13 10:06:55 +0000] [20131] [DEBUG] GET /
+[2019-05-13 10:06:56 +0000] [20131] [DEBUG] GET /logout/
+[2019-05-13 10:06:56 +0000] [20129] [DEBUG] GET /
+[2019-05-13 10:07:02 +0000] [20131] [DEBUG] GET /login/
+[2019-05-13 10:07:04 +0000] [20131] [DEBUG] GET /
+[2019-05-13 10:07:05 +0000] [20131] [DEBUG] GET /login/
+[2019-05-13 10:07:09 +0000] [20131] [DEBUG] POST /login/
+[2019-05-13 10:07:09 +0000] [20131] [DEBUG] GET /
+[2019-05-13 10:07:12 +0000] [20131] [DEBUG] GET /logout/
+[2019-05-13 10:07:12 +0000] [20129] [DEBUG] GET /
+[2019-05-13 10:07:14 +0000] [20131] [DEBUG] POST /login/
+[2019-05-13 10:07:21 +0000] [20128] [DEBUG] GET /login/
+[2019-05-13 10:07:26 +0000] [20129] [DEBUG] POST /login/
+[2019-05-13 10:07:27 +0000] [20128] [DEBUG] GET /
+[2019-05-13 10:07:29 +0000] [20128] [DEBUG] GET /logout/
+[2019-05-13 10:07:29 +0000] [20131] [DEBUG] GET /
+[2019-05-13 10:07:34 +0000] [20128] [DEBUG] GET /login/
+[2019-05-13 10:07:42 +0000] [20131] [DEBUG] POST /login/
+[2019-05-13 10:07:43 +0000] [20131] [DEBUG] GET /
+[2019-05-13 10:07:45 +0000] [20131] [DEBUG] GET /logout/
+[2019-05-13 10:07:45 +0000] [20131] [DEBUG] GET /
+[2019-05-13 10:07:50 +0000] [20131] [DEBUG] GET /login/
+[2019-05-13 10:07:58 +0000] [20131] [DEBUG] POST /login/
+[2019-05-13 10:07:59 +0000] [20128] [DEBUG] GET /
+[2019-05-13 10:08:01 +0000] [20129] [DEBUG] GET /logout/
+[2019-05-13 10:08:01 +0000] [20128] [DEBUG] GET /
+[2019-05-13 10:08:06 +0000] [20128] [DEBUG] GET /login/
+[2019-05-13 10:08:15 +0000] [20131] [DEBUG] POST /login/
+[2019-05-13 10:08:16 +0000] [20128] [DEBUG] GET /
+[2019-05-13 10:08:19 +0000] [20128] [DEBUG] GET /logout/
+[2019-05-13 10:08:19 +0000] [20128] [DEBUG] GET /
+[2019-05-13 10:08:24 +0000] [20128] [DEBUG] GET /login/
+[2019-05-13 10:08:33 +0000] [20129] [DEBUG] POST /login/
+[2019-05-13 10:08:34 +0000] [20131] [DEBUG] GET /
+[2019-05-13 10:08:36 +0000] [20129] [DEBUG] GET /logout/
+[2019-05-13 10:08:36 +0000] [20129] [DEBUG] GET /
+[2019-05-13 10:08:41 +0000] [20128] [DEBUG] GET /login/
+[2019-05-13 10:08:51 +0000] [20131] [DEBUG] POST /login/
+[2019-05-13 10:08:51 +0000] [20128] [DEBUG] GET /
+[2019-05-13 10:08:54 +0000] [20129] [DEBUG] GET /logout/
+[2019-05-13 10:08:54 +0000] [20129] [DEBUG] GET /
+[2019-05-13 10:09:00 +0000] [20131] [DEBUG] GET /login/
+[2019-05-13 10:09:06 +0000] [20131] [DEBUG] POST /login/
+[2019-05-13 10:09:07 +0000] [20128] [DEBUG] GET /
+[2019-05-13 10:09:09 +0000] [20129] [DEBUG] GET /logout/
+[2019-05-13 10:09:09 +0000] [20129] [DEBUG] GET /
+[2019-05-13 10:09:15 +0000] [20129] [DEBUG] GET /login/
+[2019-05-13 10:09:21 +0000] [20129] [DEBUG] POST /login/
+[2019-05-13 10:09:21 +0000] [20128] [DEBUG] GET /
+[2019-05-13 10:09:24 +0000] [20128] [DEBUG] GET /logout/
+[2019-05-13 10:09:24 +0000] [20128] [DEBUG] GET /
+[2019-05-13 10:09:30 +0000] [20128] [DEBUG] GET /login/
+[2019-05-13 10:09:36 +0000] [20129] [DEBUG] POST /login/
+[2019-05-13 10:09:37 +0000] [20129] [DEBUG] GET /
+[2019-05-13 10:09:38 +0000] [20128] [DEBUG] GET /logout/
+[2019-05-13 10:09:38 +0000] [20131] [DEBUG] GET /
+[2019-05-13 10:09:50 +0000] [20128] [DEBUG] GET /login/
+[2019-05-13 10:09:57 +0000] [20131] [DEBUG] POST /login/
+[2019-05-13 10:09:57 +0000] [20128] [DEBUG] GET /
+[2019-05-13 10:09:59 +0000] [20128] [DEBUG] GET /logout/
+[2019-05-13 10:09:59 +0000] [20131] [DEBUG] GET /
+[2019-05-13 10:10:04 +0000] [20128] [DEBUG] GET /login/
+[2019-05-13 10:10:10 +0000] [20128] [DEBUG] POST /login/
+[2019-05-13 10:10:11 +0000] [20128] [DEBUG] GET /
+[2019-05-13 10:10:16 +0000] [20131] [DEBUG] GET /logout/
+[2019-05-13 10:10:16 +0000] [20128] [DEBUG] GET /
+[2019-05-13 10:10:21 +0000] [20128] [DEBUG] GET /login/
+[2019-05-13 10:10:28 +0000] [20129] [DEBUG] POST /login/
+[2019-05-13 10:10:29 +0000] [20128] [DEBUG] GET /
+[2019-05-13 10:10:32 +0000] [20128] [DEBUG] GET /logout/
+[2019-05-13 10:10:32 +0000] [20131] [DEBUG] GET /
+[2019-05-13 10:10:37 +0000] [20128] [DEBUG] GET /login/
+[2019-05-13 10:10:42 +0000] [20129] [DEBUG] POST /login/
+[2019-05-13 10:10:43 +0000] [20129] [DEBUG] GET /
+[2019-05-13 10:10:44 +0000] [20131] [DEBUG] GET /logout/
+[2019-05-13 10:10:44 +0000] [20128] [DEBUG] GET /
+[2019-05-13 10:11:34 +0000] [20128] [DEBUG] POST /login/
+[2019-05-13 10:11:37 +0000] [20131] [DEBUG] POST /login/
+[2019-05-13 10:11:38 +0000] [20128] [DEBUG] GET /login/
+[2019-05-13 10:11:41 +0000] [20131] [DEBUG] GET /
+[2019-05-13 10:11:41 +0000] [20131] [DEBUG] GET /
+[2019-05-13 10:11:42 +0000] [20129] [DEBUG] GET /login/
+[2019-05-13 10:11:43 +0000] [20129] [DEBUG] GET /login/
+[2019-05-13 10:11:44 +0000] [20129] [DEBUG] GET /login/
+[2019-05-13 10:11:45 +0000] [20129] [DEBUG] GET /login/
+[2019-05-13 10:11:47 +0000] [20129] [DEBUG] GET /login/
+[2019-05-13 10:11:51 +0000] [20129] [DEBUG] GET /
+[2019-05-13 10:11:52 +0000] [20129] [DEBUG] GET /
+[2019-05-13 10:11:54 +0000] [20129] [DEBUG] POST /login/
+[2019-05-13 10:11:55 +0000] [20131] [DEBUG] GET /
+[2019-05-13 10:11:55 +0000] [20128] [DEBUG] GET /login/
+[2019-05-13 10:11:56 +0000] [20128] [DEBUG] GET /logout/
+[2019-05-13 10:11:56 +0000] [20131] [DEBUG] GET /
+[2019-05-13 10:12:02 +0000] [20128] [DEBUG] GET /login/
+[2019-05-13 10:12:11 +0000] [20128] [DEBUG] POST /login/
+[2019-05-13 10:12:12 +0000] [20129] [DEBUG] GET /
+[2019-05-13 10:12:13 +0000] [20129] [DEBUG] GET /logout/
+[2019-05-13 10:12:14 +0000] [20128] [DEBUG] GET /
+[2019-05-13 10:12:19 +0000] [20131] [DEBUG] GET /login/
+[2019-05-13 10:12:26 +0000] [20128] [DEBUG] POST /login/
+[2019-05-13 10:12:26 +0000] [20131] [DEBUG] GET /
+[2019-05-13 10:12:28 +0000] [20129] [DEBUG] GET /logout/
+[2019-05-13 10:12:28 +0000] [20128] [DEBUG] GET /
+[2019-05-13 10:12:34 +0000] [20128] [DEBUG] GET /login/
+[2019-05-13 10:12:44 +0000] [20128] [DEBUG] POST /login/
+[2019-05-13 10:12:45 +0000] [20129] [DEBUG] GET /
+[2019-05-13 10:12:47 +0000] [20128] [DEBUG] GET /logout/
+[2019-05-13 10:12:47 +0000] [20128] [DEBUG] GET /
+[2019-05-13 10:12:53 +0000] [20129] [DEBUG] GET /login/
+[2019-05-13 10:12:59 +0000] [20129] [DEBUG] POST /login/
+[2019-05-13 10:13:00 +0000] [20131] [DEBUG] GET /
+[2019-05-13 10:13:01 +0000] [20128] [DEBUG] GET /logout/
+[2019-05-13 10:13:02 +0000] [20128] [DEBUG] GET /
+[2019-05-13 10:13:06 +0000] [20128] [DEBUG] GET /login/
+[2019-05-13 10:13:14 +0000] [20128] [DEBUG] POST /login/
+[2019-05-13 10:13:15 +0000] [20129] [DEBUG] GET /
+[2019-05-13 10:13:16 +0000] [20129] [DEBUG] GET /logout/
+[2019-05-13 10:13:16 +0000] [20131] [DEBUG] GET /
+[2019-05-13 10:13:21 +0000] [20131] [DEBUG] GET /login/
+[2019-05-13 10:13:30 +0000] [20131] [DEBUG] POST /login/
+[2019-05-13 10:13:31 +0000] [20129] [DEBUG] GET /
+[2019-05-13 10:13:33 +0000] [20128] [DEBUG] GET /logout/
+[2019-05-13 10:13:33 +0000] [20129] [DEBUG] GET /
+[2019-05-13 10:14:18 +0000] [20131] [DEBUG] GET /
+[2019-05-13 10:14:20 +0000] [20131] [DEBUG] GET /admin/
+[2019-05-13 10:14:20 +0000] [20131] [DEBUG] GET /admin/login/
+[2019-05-13 10:14:24 +0000] [20131] [DEBUG] POST /admin/login/
+[2019-05-13 10:14:25 +0000] [20131] [DEBUG] GET /admin/
+[2019-05-13 10:14:27 +0000] [20129] [DEBUG] GET /admin/portalapp/student/
+[2019-05-13 10:14:27 +0000] [20129] [DEBUG] GET /admin/jsi18n/
+[2019-05-13 10:15:03 +0000] [20131] [DEBUG] GET /admin/portalapp/student/add/
+[2019-05-13 10:15:03 +0000] [20128] [DEBUG] GET /admin/jsi18n/
+[2019-05-13 10:15:10 +0000] [20128] [DEBUG] GET /admin/auth/user/add/
+[2019-05-13 10:15:10 +0000] [20131] [DEBUG] GET /admin/jsi18n/
+[2019-05-13 10:15:41 +0000] [20131] [DEBUG] POST /admin/auth/user/add/
+[2019-05-13 10:15:41 +0000] [20129] [DEBUG] GET /admin/jsi18n/
+[2019-05-13 10:15:56 +0000] [20129] [DEBUG] GET /admin/portalapp/student/
+[2019-05-13 10:15:56 +0000] [20129] [DEBUG] GET /admin/jsi18n/
+[2019-05-13 10:16:08 +0000] [20128] [DEBUG] GET /admin/portalapp/
+[2019-05-13 10:16:10 +0000] [20129] [DEBUG] GET /admin/
+[2019-05-13 10:16:13 +0000] [20131] [DEBUG] GET /admin/auth/user/
+[2019-05-13 10:16:13 +0000] [20131] [DEBUG] GET /admin/jsi18n/
+[2019-05-13 10:17:07 +0000] [20131] [DEBUG] GET /admin/auth/user/11/change/
+[2019-05-13 10:17:07 +0000] [20128] [DEBUG] GET /admin/jsi18n/
+[2019-05-13 10:17:12 +0000] [20128] [DEBUG] GET /admin/auth/user/
+[2019-05-13 10:17:17 +0000] [20128] [DEBUG] GET /admin/auth/user/
+[2019-05-13 10:17:17 +0000] [20128] [DEBUG] GET /admin/jsi18n/
+[2019-05-13 10:17:36 +0000] [20128] [DEBUG] GET /admin/
+[2019-05-13 10:17:53 +0000] [20128] [DEBUG] GET /admin/portalapp/student/
+[2019-05-13 10:17:53 +0000] [20128] [DEBUG] GET /admin/jsi18n/
+[2019-05-13 10:18:06 +0000] [20128] [DEBUG] GET /admin/portalapp/
+[2019-05-13 10:18:10 +0000] [20128] [DEBUG] GET /admin/
+[2019-05-13 10:18:16 +0000] [20131] [DEBUG] GET /admin/auth/user/
+[2019-05-13 10:18:16 +0000] [20129] [DEBUG] GET /admin/jsi18n/
+[2019-05-13 10:18:26 +0000] [20128] [DEBUG] GET /admin/auth/user/11/change/
+[2019-05-13 10:18:26 +0000] [20128] [DEBUG] GET /admin/jsi18n/
+[2019-05-13 10:18:31 +0000] [20128] [DEBUG] GET /admin/auth/user/11/delete/
+[2019-05-13 10:18:33 +0000] [20128] [DEBUG] POST /admin/auth/user/11/delete/
+[2019-05-13 10:18:33 +0000] [20128] [DEBUG] GET /admin/auth/user/
+[2019-05-13 10:18:34 +0000] [20131] [DEBUG] GET /admin/jsi18n/
+[2019-05-13 10:18:52 +0000] [20131] [DEBUG] GET /admin/
+[2019-05-13 10:18:56 +0000] [20131] [DEBUG] GET /admin/portalapp/student/
+[2019-05-13 10:18:56 +0000] [20129] [DEBUG] GET /admin/jsi18n/
+[2019-05-13 10:19:02 +0000] [20128] [DEBUG] GET /admin/portalapp/student/add/
+[2019-05-13 10:19:02 +0000] [20131] [DEBUG] GET /admin/jsi18n/
+[2019-05-13 10:19:04 +0000] [20128] [DEBUG] GET /admin/auth/user/add/
+[2019-05-13 10:19:04 +0000] [20128] [DEBUG] GET /admin/jsi18n/
+[2019-05-13 10:19:21 +0000] [20128] [DEBUG] GET /admin/portalapp/
+[2019-05-13 10:19:23 +0000] [20129] [DEBUG] GET /admin/
+[2019-05-13 10:19:26 +0000] [20129] [DEBUG] GET /admin/logout/
+[2019-05-13 10:19:26 +0000] [20129] [DEBUG] GET /
+[2019-05-13 10:19:27 +0000] [20129] [DEBUG] GET /admin/
+[2019-05-13 10:19:27 +0000] [20131] [DEBUG] GET /admin/login/
+[2019-05-13 10:19:34 +0000] [20131] [DEBUG] POST /admin/login/
+[2019-05-13 10:19:35 +0000] [20128] [DEBUG] GET /admin/
+[2019-05-13 10:19:40 +0000] [20128] [DEBUG] GET /admin/
+[2019-05-13 10:19:42 +0000] [20128] [DEBUG] GET /admin/logout/
+[2019-05-13 10:19:42 +0000] [20131] [DEBUG] GET /
+[2019-05-13 10:39:26 +0000] [20131] [DEBUG] GET /
+[2019-05-13 10:44:11 +0000] [20128] [DEBUG] GET /
+[2019-05-13 10:44:16 +0000] [20131] [DEBUG] GET /login/
+[2019-05-13 11:12:16 +0000] [20128] [DEBUG] GET /
+[2019-05-13 11:12:18 +0000] [20128] [DEBUG] GET /login/
+[2019-05-13 11:12:20 +0000] [20128] [DEBUG] GET /registration/passwordreset.html/
+[2019-05-13 11:12:25 +0000] [20131] [DEBUG] GET /login/
+[2019-05-13 12:00:58 +0000] [20131] [DEBUG] GET /
+[2019-05-13 12:01:02 +0000] [20128] [DEBUG] GET /login/
+[2019-05-13 12:01:17 +0000] [20128] [DEBUG] POST /login/
+[2019-05-13 12:01:18 +0000] [20129] [DEBUG] GET /
+[2019-05-13 12:01:25 +0000] [20129] [DEBUG] GET /users/parth/
+[2019-05-13 12:02:33 +0000] [20128] [DEBUG] GET /portalapp/report/
+[2019-05-13 12:02:43 +0000] [20131] [DEBUG] POST /portalapp/report/
+[2019-05-13 12:02:43 +0000] [20131] [DEBUG] GET /
+[2019-05-13 12:02:45 +0000] [20128] [DEBUG] GET /users/parth/
+[2019-05-13 12:03:31 +0000] [20129] [DEBUG] GET /portalapp/logissue/
+[2019-05-13 12:03:43 +0000] [20128] [DEBUG] GET /portalapp/report/
+[2019-05-13 12:04:37 +0000] [20129] [DEBUG] GET /logout/
+[2019-05-13 12:04:37 +0000] [20131] [DEBUG] GET /
+[2019-05-13 12:04:39 +0000] [20131] [DEBUG] GET /login/
+[2019-05-13 12:04:45 +0000] [20131] [DEBUG] POST /login/
+[2019-05-13 12:04:45 +0000] [20129] [DEBUG] GET /
+[2019-05-13 12:04:49 +0000] [20128] [DEBUG] GET /logout/
+[2019-05-13 12:04:49 +0000] [20128] [DEBUG] GET /
+[2019-05-13 12:35:17 +0000] [20128] [DEBUG] GET /
+[2019-05-13 12:35:19 +0000] [20131] [DEBUG] GET /login/
+[2019-05-13 12:35:30 +0000] [20129] [DEBUG] GET /admin/
+[2019-05-13 12:35:30 +0000] [20129] [DEBUG] GET /admin/login/
+[2019-05-13 12:35:37 +0000] [20128] [DEBUG] POST /admin/login/
+[2019-05-13 12:35:37 +0000] [20128] [DEBUG] GET /admin/
+[2019-05-13 12:35:41 +0000] [20128] [DEBUG] GET /admin/portalapp/loggedissue/
+[2019-05-13 12:35:41 +0000] [20128] [DEBUG] GET /admin/jsi18n/
+[2019-05-13 12:35:57 +0000] [20128] [DEBUG] GET /admin/portalapp/loggedissue/1/change/
+[2019-05-13 12:35:57 +0000] [20128] [DEBUG] GET /admin/jsi18n/
+[2019-05-13 12:35:59 +0000] [20128] [DEBUG] GET /admin/portalapp/loggedissue/
+[2019-05-13 12:36:01 +0000] [20128] [DEBUG] GET /admin/
+[2019-05-13 12:36:08 +0000] [20131] [DEBUG] GET /admin/portalapp/loggedissue/
+[2019-05-13 12:36:08 +0000] [20131] [DEBUG] GET /admin/jsi18n/
+[2019-05-13 12:36:47 +0000] [20131] [DEBUG] GET /admin/
+[2019-05-13 12:36:49 +0000] [20129] [DEBUG] GET /admin/portalapp/student/
+[2019-05-13 12:36:50 +0000] [20128] [DEBUG] GET /admin/jsi18n/
+[2019-05-13 12:37:06 +0000] [20128] [DEBUG] GET /admin/
+[2019-05-13 12:37:08 +0000] [20129] [DEBUG] GET /admin/portalapp/loggedissue/
+[2019-05-13 12:37:08 +0000] [20128] [DEBUG] GET /admin/jsi18n/
+[2019-05-13 12:37:16 +0000] [20128] [DEBUG] GET /admin/
+[2019-05-13 12:37:18 +0000] [20131] [DEBUG] GET /admin/portalapp/student/
+[2019-05-13 12:37:18 +0000] [20129] [DEBUG] GET /admin/jsi18n/
+[2019-05-13 12:59:22 +0000] [20131] [DEBUG] GET /
+[2019-05-13 12:59:27 +0000] [20128] [DEBUG] GET /admin/
+[2019-05-13 12:59:29 +0000] [20129] [DEBUG] GET /admin/logout/
+[2019-05-13 12:59:29 +0000] [20131] [DEBUG] GET /
+[2019-05-13 12:59:30 +0000] [20131] [DEBUG] GET /
+[2019-05-13 12:59:33 +0000] [20131] [DEBUG] GET /login/
+[2019-05-13 12:59:41 +0000] [20131] [DEBUG] POST /login/
+[2019-05-13 12:59:42 +0000] [20128] [DEBUG] GET /
+[2019-05-13 12:59:43 +0000] [20128] [DEBUG] GET /users/parth/
+[2019-05-13 13:01:21 +0000] [20128] [DEBUG] GET /admin/
+[2019-05-13 13:01:21 +0000] [20128] [DEBUG] GET /admin/login/
+[2019-05-13 13:01:28 +0000] [20131] [DEBUG] POST /admin/login/
+[2019-05-13 13:01:28 +0000] [20131] [DEBUG] GET /admin/
+[2019-05-13 13:01:30 +0000] [20131] [DEBUG] GET /admin/portalapp/student/
+[2019-05-13 13:01:30 +0000] [20128] [DEBUG] GET /admin/jsi18n/
+[2019-05-13 13:01:32 +0000] [20129] [DEBUG] GET /admin/
+[2019-05-13 13:01:35 +0000] [20128] [DEBUG] GET /admin/portalapp/loggedissue/
+[2019-05-13 13:01:36 +0000] [20129] [DEBUG] GET /admin/jsi18n/
+[2019-05-13 13:01:39 +0000] [20129] [DEBUG] GET /admin/portalapp/loggedissue/1/change/
+[2019-05-13 13:01:39 +0000] [20129] [DEBUG] GET /admin/jsi18n/
+[2019-05-13 13:01:49 +0000] [20131] [DEBUG] POST /admin/portalapp/loggedissue/1/change/
+[2019-05-13 13:01:49 +0000] [20131] [DEBUG] GET /admin/portalapp/loggedissue/
+[2019-05-13 13:01:50 +0000] [20128] [DEBUG] GET /admin/jsi18n/
+[2019-05-13 13:01:52 +0000] [20128] [DEBUG] GET /admin/portalapp/loggedissue/2/change/
+[2019-05-13 13:01:52 +0000] [20128] [DEBUG] GET /admin/jsi18n/
+[2019-05-13 13:02:01 +0000] [20128] [DEBUG] POST /admin/portalapp/loggedissue/2/change/
+[2019-05-13 13:02:01 +0000] [20128] [DEBUG] GET /admin/jsi18n/
+[2019-05-13 13:02:15 +0000] [20128] [DEBUG] POST /admin/portalapp/loggedissue/2/change/
+[2019-05-13 13:02:16 +0000] [20131] [DEBUG] GET /admin/portalapp/loggedissue/
+[2019-05-13 13:02:16 +0000] [20131] [DEBUG] GET /admin/jsi18n/
+[2019-05-13 13:02:20 +0000] [20129] [DEBUG] GET /admin/logout/
+[2019-05-13 13:02:20 +0000] [20129] [DEBUG] GET /
+[2019-05-13 13:02:22 +0000] [20129] [DEBUG] GET /login/
+[2019-05-13 13:02:39 +0000] [20129] [DEBUG] POST /login/
+[2019-05-13 13:02:40 +0000] [20129] [DEBUG] GET /
+[2019-05-13 13:02:41 +0000] [20129] [DEBUG] GET /users/parth/
+[2019-05-13 13:05:06 +0000] [20129] [DEBUG] GET /users/parth/
+[2019-05-13 13:05:06 +0000] [20129] [DEBUG] GET /users/parth/
+[2019-05-13 13:05:07 +0000] [20131] [DEBUG] GET /users/parth/
+[2019-05-13 13:05:26 +0000] [20131] [DEBUG] GET /users/parth/
+[2019-05-13 13:05:31 +0000] [20128] [DEBUG] GET /logout/
+[2019-05-13 13:05:31 +0000] [20129] [DEBUG] GET /
+[2019-05-13 13:05:32 +0000] [20129] [DEBUG] GET /login/
+[2019-05-13 13:05:41 +0000] [20129] [DEBUG] POST /login/
+[2019-05-13 13:05:41 +0000] [20129] [DEBUG] GET /
+[2019-05-13 13:05:43 +0000] [20131] [DEBUG] GET /users/parth/
+[2019-05-13 13:06:46 +0000] [20129] [DEBUG] GET /users/parth/
+[2019-05-13 13:07:07 +0000] [20128] [DEBUG] GET /admin/login/
+[2019-05-13 13:07:15 +0000] [20131] [DEBUG] POST /admin/login/
+[2019-05-13 13:07:16 +0000] [20131] [DEBUG] GET /admin/
+[2019-05-13 13:07:18 +0000] [20129] [DEBUG] GET /admin/portalapp/loggedissue/
+[2019-05-13 13:07:18 +0000] [20129] [DEBUG] GET /admin/jsi18n/
+[2019-05-13 13:07:22 +0000] [20129] [DEBUG] GET /admin/
+[2019-05-13 13:07:23 +0000] [20129] [DEBUG] GET /admin/portalapp/student/
+[2019-05-13 13:07:23 +0000] [20129] [DEBUG] GET /admin/jsi18n/
+[2019-05-13 13:07:26 +0000] [20131] [DEBUG] GET /admin/portalapp/student/55/change/
+[2019-05-13 13:07:27 +0000] [20128] [DEBUG] GET /admin/jsi18n/
+[2019-05-13 13:07:36 +0000] [20129] [DEBUG] POST /admin/portalapp/student/55/change/
+[2019-05-13 13:07:36 +0000] [20131] [DEBUG] GET /admin/portalapp/student/
+[2019-05-13 13:07:36 +0000] [20131] [DEBUG] GET /admin/jsi18n/
+[2019-05-13 13:07:41 +0000] [20131] [DEBUG] GET /admin/logout/
+[2019-05-13 13:07:41 +0000] [20131] [DEBUG] GET /
+[2019-05-13 13:07:57 +0000] [20128] [DEBUG] GET /
+[2019-05-13 13:08:00 +0000] [20128] [DEBUG] GET /login/
+[2019-05-13 13:08:07 +0000] [20128] [DEBUG] POST /login/
+[2019-05-13 13:08:07 +0000] [20129] [DEBUG] GET /
+[2019-05-13 13:08:09 +0000] [20131] [DEBUG] GET /users/parth/
+[2019-05-13 13:08:17 +0000] [20128] [DEBUG] GET /admin/
+[2019-05-13 13:08:17 +0000] [20129] [DEBUG] GET /admin/login/
+[2019-05-13 13:08:22 +0000] [20129] [DEBUG] POST /admin/login/
+[2019-05-13 13:08:22 +0000] [20129] [DEBUG] GET /admin/
+[2019-05-13 13:08:25 +0000] [20129] [DEBUG] GET /admin/portalapp/student/
+[2019-05-13 13:08:25 +0000] [20128] [DEBUG] GET /admin/jsi18n/
+[2019-05-13 13:08:28 +0000] [20128] [DEBUG] GET /admin/
+[2019-05-13 13:08:31 +0000] [20129] [DEBUG] GET /admin/portalapp/loggedissue/
+[2019-05-13 13:08:32 +0000] [20129] [DEBUG] GET /admin/jsi18n/
+[2019-05-13 13:08:35 +0000] [20129] [DEBUG] GET /admin/portalapp/loggedissue/2/change/
+[2019-05-13 13:08:35 +0000] [20129] [DEBUG] GET /admin/jsi18n/
+[2019-05-13 13:08:37 +0000] [20129] [DEBUG] GET /admin/portalapp/loggedissue/
+[2019-05-13 13:08:42 +0000] [20128] [DEBUG] GET /admin/portalapp/loggedissue/2/change/
+[2019-05-13 13:08:42 +0000] [20131] [DEBUG] GET /admin/jsi18n/
+[2019-05-13 13:08:47 +0000] [20128] [DEBUG] POST /admin/portalapp/loggedissue/2/change/
+[2019-05-13 13:08:47 +0000] [20131] [DEBUG] GET /admin/portalapp/loggedissue/
+[2019-05-13 13:08:47 +0000] [20131] [DEBUG] GET /admin/jsi18n/
+[2019-05-13 13:08:50 +0000] [20131] [DEBUG] GET /admin/portalapp/loggedissue/1/change/
+[2019-05-13 13:08:50 +0000] [20129] [DEBUG] GET /admin/jsi18n/
+[2019-05-13 13:08:58 +0000] [20128] [DEBUG] POST /admin/portalapp/loggedissue/1/change/
+[2019-05-13 13:09:01 +0000] [20128] [DEBUG] GET /admin/portalapp/loggedissue/
+[2019-05-13 13:09:02 +0000] [20128] [DEBUG] GET /admin/jsi18n/
+[2019-05-13 13:09:05 +0000] [20128] [DEBUG] GET /admin/portalapp/
+[2019-05-13 13:09:07 +0000] [20131] [DEBUG] GET /admin/portalapp/student/
+[2019-05-13 13:09:08 +0000] [20129] [DEBUG] GET /admin/jsi18n/
+[2019-05-13 13:09:13 +0000] [20128] [DEBUG] GET /admin/portalapp/
+[2019-05-13 13:09:16 +0000] [20128] [DEBUG] GET /admin/portalapp/
+[2019-05-13 13:09:19 +0000] [20128] [DEBUG] GET /admin/
+[2019-05-13 13:09:22 +0000] [20131] [DEBUG] GET /admin/logout/
+[2019-05-13 13:09:22 +0000] [20129] [DEBUG] GET /
+[2019-05-13 13:12:34 +0000] [20128] [INFO] Worker exiting (pid: 20128)
+[2019-05-13 13:12:34 +0000] [20131] [INFO] Worker exiting (pid: 20131)
+[2019-05-13 13:12:34 +0000] [20129] [INFO] Worker exiting (pid: 20129)
+[2019-05-13 18:42:34 +0530] [20125] [INFO] Handling signal: term
+[2019-05-13 18:42:35 +0530] [20125] [INFO] Shutting down: Master
+[2019-05-13 18:42:57 +0530] [22390] [DEBUG] Current configuration:
+  threads: 1
+  preload_app: False
+  sendfile: None
+  group: 27
+  proxy_allow_ips: ['127.0.0.1']
+  suppress_ragged_eofs: True
+  secure_scheme_headers: {'X-FORWARDED-SSL': 'on', 'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https'}
+  workers: 3
+  loglevel: debug
+  logger_class: gunicorn.glogging.Logger
+  reload_extra_files: []
+  worker_int: <function WorkerInt.worker_int at 0x7fac2c677730>
+  paste: None
+  post_request: <function PostRequest.post_request at 0x7fac2c677ae8>
+  ssl_version: 2
+  reload_engine: auto
+  worker_abort: <function WorkerAbort.worker_abort at 0x7fac2c677840>
+  limit_request_line: 4094
+  backlog: 2048
+  enable_stdio_inheritance: False
+  spew: False
+  reuse_port: False
+  pidfile: None
+  initgroups: False
+  forwarded_allow_ips: ['127.0.0.1']
+  pythonpath: None
+  disable_redirect_access_to_syslog: False
+  syslog: False
+  statsd_prefix: 
+  config: None
+  default_proc_name: portal.wsgi:application
+  max_requests_jitter: 0
+  logconfig: None
+  syslog_facility: user
+  tmp_upload_dir: None
+  proxy_protocol: False
+  keyfile: None
+  certfile: None
+  user: 0
+  worker_connections: 1000
+  ca_certs: None
+  on_starting: <function OnStarting.on_starting at 0x7fac2c6770d0>
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /root/SRIP-PORTAL/portal/logs/debug.log
+  graceful_timeout: 30
+  cert_reqs: 0
+  worker_class: sync
+  do_handshake_on_connect: False
+  keepalive: 2
+  on_reload: <function OnReload.on_reload at 0x7fac2c6771e0>
+  when_ready: <function WhenReady.when_ready at 0x7fac2c6772f0>
+  child_exit: <function ChildExit.child_exit at 0x7fac2c677bf8>
+  reload: False
+  check_config: False
+  syslog_prefix: None
+  ciphers: TLSv1
+  bind: ['0.0.0.0:9000']
+  capture_output: False
+  statsd_host: None
+  post_fork: <function Postfork.post_fork at 0x7fac2c677510>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7fac2c677620>
+  proc_name: SRIP_Portal
+  raw_env: []
+  worker_tmp_dir: None
+  raw_paste_global_conf: []
+  limit_request_fields: 100
+  pre_request: <function PreRequest.pre_request at 0x7fac2c677a60>
+  on_exit: <function OnExit.on_exit at 0x7fac2c677f28>
+  limit_request_field_size: 8190
+  daemon: True
+  umask: 0
+  pre_fork: <function Prefork.pre_fork at 0x7fac2c677400>
+  syslog_addr: udp://localhost:514
+  pre_exec: <function PreExec.pre_exec at 0x7fac2c677950>
+  max_requests: 0
+  chdir: /root/SRIP-PORTAL/portal
+  worker_exit: <function WorkerExit.worker_exit at 0x7fac2c677d08>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7fac2c677e18>
+  accesslog: None
+  logconfig_dict: {}
+  timeout: 30
+[2019-05-13 18:42:57 +0530] [22390] [INFO] Starting gunicorn 19.9.0
+[2019-05-13 18:42:57 +0530] [22390] [DEBUG] Arbiter booted
+[2019-05-13 18:42:57 +0530] [22390] [INFO] Listening at: http://0.0.0.0:9000 (22390)
+[2019-05-13 18:42:57 +0530] [22390] [INFO] Using worker: sync
+[2019-05-13 18:42:57 +0530] [22393] [INFO] Booting worker with pid: 22393
+[2019-05-13 18:42:57 +0530] [22394] [INFO] Booting worker with pid: 22394
+[2019-05-13 18:42:57 +0530] [22395] [INFO] Booting worker with pid: 22395
+[2019-05-13 18:42:57 +0530] [22390] [DEBUG] 3 workers
+[2019-05-13 13:13:02 +0000] [22395] [DEBUG] GET /
+[2019-05-13 13:13:04 +0000] [22394] [DEBUG] GET /login/
+[2019-05-13 13:13:11 +0000] [22394] [DEBUG] POST /login/
+[2019-05-13 13:13:11 +0000] [22393] [DEBUG] GET /
+[2019-05-13 13:13:13 +0000] [22393] [DEBUG] GET /users/parth/
+[2019-05-13 13:15:31 +0000] [22393] [DEBUG] GET /
+[2019-05-13 13:17:36 +0000] [22394] [DEBUG] GET /users/parth/
+[2019-05-13 13:46:07 +0000] [22394] [DEBUG] GET /admin/portalapp/
+[2019-05-13 13:46:07 +0000] [22394] [DEBUG] GET /admin/login/
+[2019-05-13 13:46:12 +0000] [22395] [DEBUG] GET /
+[2019-05-13 13:46:14 +0000] [22393] [DEBUG] GET /logout/
+[2019-05-13 13:46:14 +0000] [22393] [DEBUG] GET /
+[2019-05-13 14:11:16 +0000] [22394] [DEBUG] GET /
+[2019-05-13 14:11:18 +0000] [22393] [DEBUG] GET /login/
+[2019-05-13 14:11:35 +0000] [22393] [DEBUG] POST /login/
+[2019-05-13 14:11:36 +0000] [22393] [DEBUG] GET /
+[2019-05-13 14:11:38 +0000] [22393] [DEBUG] GET /portalapp/logissue/
+[2019-05-13 14:11:41 +0000] [22393] [DEBUG] GET /users/parth/
+[2019-05-13 14:11:43 +0000] [22393] [DEBUG] GET /portalapp/report/
+[2019-05-13 14:11:45 +0000] [22393] [DEBUG] GET /logout/
+[2019-05-13 14:11:45 +0000] [22393] [DEBUG] GET /
