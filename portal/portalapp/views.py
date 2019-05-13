@@ -61,8 +61,12 @@ def logissue(request):
             commit_id_form = cleaned_data.get('commit_id')
             url_form = cleaned_data.get('url')
             mentor_name = Student.objects.get(user=request.user).mentor
-            obj = LoggedIssue(
-                username=current_user, commit_id=commit_id_form, url=url_form, mentor=mentor_name)
+            if not mentor_name:
+                obj = LoggedIssue(
+                    username=current_user, commit_id=commit_id_form, url=url_form)
+            else:
+                obj = LoggedIssue(
+                    username=current_user, commit_id=commit_id_form, url=url_form, mentor=mentor_name)
             try:
                 obj.save()
 
