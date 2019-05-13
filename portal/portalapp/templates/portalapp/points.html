@@ -12,7 +12,7 @@
 <body>
     <center>
         <div class="container-fluid" style="background-color: darkblue; padding: 10px;">
-            <h3 style="color:whitesmoke">Your function point average is {{ info.function_points }} out of 100</h3>
+            <h3 style="color:whitesmoke">Your function point  is {{ info.function_points }} out of 100</h3>
             <h3 style="color:whitesmoke">Your equivalent effort in hours is {{ info.effort }} out of 240 </h3>
             <h4 style="color:whitesmoke">Weekly Report Link : <a style="color: lime" href= {{ info.report }}> {{ info.report }} </a></h4>
             <h4 style="color:whitesmoke">Mentor : <p style="color: lime; display:inline;"> {{ info.mentor }} </p>  </h4>
@@ -24,6 +24,7 @@
                     <th>Commit Id</th>
                     <th>Url</th>
                     <th>Points</th>
+                    <th>Time of Submission</th>
                     <th>Evaluated</th>
                 </tr>
                 {% for i in issue_info %}
@@ -31,6 +32,7 @@
                     <td> {{ i.commit_id }} </td>
                     <td> {{ i.url }} </td>
                     <td> {{ i.issue_points }} </td>
+                    <td> {{ i.toc }}</td>
                     {% if i.is_added %}
                     <td>Yes</td>
                     {% else %}
