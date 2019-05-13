@@ -18,7 +18,6 @@ def calculate(current_user):
     user_display_info.effort = user_display_info.function_points * 13
     user_display_info.save()
 
-
 def index(request):
     if request.user.is_authenticated:
         current_user = request.user
