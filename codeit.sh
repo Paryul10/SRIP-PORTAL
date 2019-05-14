@@ -15,6 +15,7 @@ cd $repo
 git reset --hard $commitid
 
 cd ..
-cloc $repo
+cloc $repo > abc.txt
+#echo $output 
 
 rm -rf $repo
