@@ -12,6 +12,7 @@ urlpatterns = [
     url(r'^portalapp/report/$',views.report,name='report'),
     url(r'^portalapp/uploadhandle/$',views.uploadhandle,name='uploadhandle'),
     url(r'^registration/passwordreset.html/$',views.passwordreset,name='passwordreset'),
+   # url(r'^password/$', views.change_password, name='change_password'),
     # url(r'^users/(?P<user_id>[0-9]+)/$',views.displaypoints,name = 'displaypoints')
 ]
 
