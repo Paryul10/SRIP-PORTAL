@@ -9,6 +9,22 @@ from .forms import IssueForm, ReportForm, HandleForm
 # Create your views here.'
 
 
+# def change_password(request):
+#     if request.method == 'POST':
+#         form = PasswordChangeForm(request.user, request.POST)
+#         if form.is_valid():
+#             user = form.save()
+#             update_session_auth_hash(request, user)  # Important!
+#             messages.success(request, 'Your password was successfully updated!')
+#             return redirect('change_password')
+#         else:
+#             messages.error(request, 'Please correct the error below.')
+#     else:
+#         form = PasswordChangeForm(request.user)
+#     return render(request, 'accounts/change_password.html', {
+#         'form': form
+#     })
+
 def calculate(current_user):
     issue_points_info = LoggedIssue.objects.filter(username=current_user)
     total = 0
