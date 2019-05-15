@@ -23,6 +23,7 @@ class LoggedIssue(models.Model):
     url = models.URLField(default="https://www.google.com/")
     issue_points = models.FloatField(default=0)
     mentor = models.CharField(max_length=100,blank=True,null=True)
+    handle = models.CharField(max_length=25,blank=True,null=True,unique=False)
     toc = models.DateTimeField(default=datetime.now)        ## time of creation
     is_added = models.BooleanField(default=False)
 

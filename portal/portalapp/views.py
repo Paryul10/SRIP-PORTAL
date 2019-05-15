@@ -8,33 +8,15 @@ from .forms import IssueForm, ReportForm, HandleForm
 
 # Create your views here.'
 
-
-# def change_password(request):
-#     if request.method == 'POST':
-#         form = PasswordChangeForm(request.user, request.POST)
-#         if form.is_valid():
-#             user = form.save()
-#             update_session_auth_hash(request, user)  # Important!
-#             messages.success(request, 'Your password was successfully updated!')
-#             return redirect('change_password')
-#         else:
-#             messages.error(request, 'Please correct the error below.')
-#     else:
-#         form = PasswordChangeForm(request.user)
-#     return render(request, 'accounts/change_password.html', {
-#         'form': form
-#     })
-
 def calculate(current_user):
     issue_points_info = LoggedIssue.objects.filter(username=current_user)
-    total = 0
-    for i in issue_points_info:
-        total += i.issue_points
+    len_com = len(issue_points_info)
+    # print(len_com)
+    total = issue_points_info[len_com-1].issue_points
+    print(total)
     user_display_info = Student.objects.get(user=current_user)
     user_display_info.function_points = total
-    user_display_info.effort = user_display_info.function_points * 13
     user_display_info.save()
-
 
 def index(request):
     if request.user.is_authenticated:
@@ -78,11 +60,10 @@ def logissue(request):
             commit_id_form = cleaned_data.get('commit_id')
             url_form = cleaned_data.get('url')
             mentor_name = Student.objects.get(user=request.user).mentor
-            obj = LoggedIssue(
-                username=current_user, commit_id=commit_id_form, url=url_form, mentor=mentor_name)
+            handle_form = Student.objects.get(user=request.user).handle
+            obj = LoggedIssue(username=current_user, commit_id=commit_id_form, url=url_form, mentor=mentor_name,handle=handle_form)
             try:
                 obj.save()
-
             except:
                 return HttpResponse('Already Existing Commit! Please resubmit with proper commit id')
 
