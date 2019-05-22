@@ -11,7 +11,10 @@ from .forms import IssueForm, ReportForm, HandleForm
 def calculate(current_user):
     issue_points_info = LoggedIssue.objects.filter(username=current_user)
     len_com = len(issue_points_info)
-    total = issue_points_info[len_com-1].issue_points
+    if len_com >=1:
+        total = issue_points_info[len_com-1].issue_points
+    else:
+        total = 0
     user_display_info = Student.objects.get(user=current_user)
     user_display_info.function_points = total
     user_display_info.save()
