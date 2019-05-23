@@ -4,7 +4,7 @@ script_1 = open("abc.txt", "r")
 
 lines = script_1.readlines()
 # print(lines[0])
-lab = int(lines[0],10)
+# lab = int(lines[0],10)
 # print(lab)
 a = []
 b = []

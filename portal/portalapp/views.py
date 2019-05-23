@@ -9,6 +9,12 @@ from .forms import IssueForm, ReportForm, HandleForm
 # Create your views here.'
 
 def calculate(current_user):
+
+    div_fac = 27
+    mul_fac = 3
+    j = 0.45
+    power = mul_fac * j
+
     issue_points_info = LoggedIssue.objects.filter(username=current_user)
     len_com = len(issue_points_info)
     if len_com >=1:
@@ -17,6 +23,11 @@ def calculate(current_user):
         total = 0
     user_display_info = Student.objects.get(user=current_user)
     user_display_info.function_points = total
+
+    man_months = total ** power 
+    man_months = man_months / 27
+    user_display_info.effort = man_months * 160
+
     user_display_info.save()
 
 def index(request):

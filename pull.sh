@@ -1,12 +1,21 @@
 dir=$1
-# commitid=$2
+commitid=$2
 
 cd $dir
-# git pull
+git pull
 
-# git reset --hard $commitid
+git reset --hard $commitid
 
-cd SRIP
-cd Codes
+cd ..
+# cd SRIP
+# cd Codes
 
-cloc .
+# cloc . > abc.txt
+
+# cd ../../..
+
+cloc $dir/SRIP/Codes > abc.txt
+
+python3 fpevaluator.py
+
+echo $dir

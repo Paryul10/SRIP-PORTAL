@@ -95,20 +95,20 @@ for i in range(0,length,2):
         function_points = sloc / java_sloc_fp
     elif lang == "JavaScript":
         function_points = sloc / javascript_sloc_fp
-        if script.lab == 1:
-            function_points = function_points - comp_org_js
-        elif script.lab == 2:
-            function_points = function_points - graphics_js
-        elif script.lab == 3:
-            function_points = function_points - pattern_js
-        elif script.lab == 4:
-            function_points = function_points - vlsi_js
-        elif script.lab == 5:
-            function_points = function_points - dld_js
-        elif script.lab == 6:
-            function_points = function_points - speech_js
-        else:
-            function_points = 0
+        # if script.lab == 1:
+        #     function_points = function_points - comp_org_js
+        # elif script.lab == 2:
+        #     function_points = function_points - graphics_js
+        # elif script.lab == 3:
+        #     function_points = function_points - pattern_js
+        # elif script.lab == 4:
+        #     function_points = function_points - vlsi_js
+        # elif script.lab == 5:
+        #     function_points = function_points - dld_js
+        # elif script.lab == 6:
+        #     function_points = function_points - speech_js
+        # else:
+        #     function_points = 0
     elif lang == "go":
         function_points = sloc / go_sloc_fp
     elif lang == "csharp":
@@ -119,36 +119,36 @@ for i in range(0,length,2):
         function_points = sloc / dotnet_sloc_fp
     elif lang == "HTML":
         function_points = sloc / html_sloc_fp
-        if script.lab == 1:
-            function_points = function_points - comp_org_html
-        elif script.lab == 2:
-            function_points = function_points - graphics_html
-        elif script.lab == 3:
-            function_points = function_points - pattern_html
-        elif script.lab == 4:
-            function_points = function_points - vlsi_html
-        elif script.lab == 5:
-            function_points = function_points - dld_html
-        elif script.lab == 6:
-            function_points = function_points - speech_html
-        else:
-            function_points = 0
+        # if script.lab == 1:
+        #     function_points = function_points - comp_org_html
+        # elif script.lab == 2:
+        #     function_points = function_points - graphics_html
+        # elif script.lab == 3:
+        #     function_points = function_points - pattern_html
+        # elif script.lab == 4:
+        #     function_points = function_points - vlsi_html
+        # elif script.lab == 5:
+        #     function_points = function_points - dld_html
+        # elif script.lab == 6:
+        #     function_points = function_points - speech_html
+        # else:
+        #     function_points = 0
     elif lang == "CSS":
         function_points = sloc / html_sloc_fp
-        if script.lab == 1:
-            function_points = function_points - comp_org_css
-        elif script.lab == 2:
-            function_points = function_points - graphics_css
-        elif script.lab == 3:
-            function_points = function_points - pattern_css
-        elif script.lab == 4:
-            function_points = function_points - vlsi_css
-        elif script.lab == 5:
-            function_points = function_points - dld_css
-        elif script.lab == 6:
-            function_points = function_points - speech_css
-        else:
-            function_points = 0
+        # if script.lab == 1:
+        #     function_points = function_points - comp_org_css
+        # elif script.lab == 2:
+        #     function_points = function_points - graphics_css
+        # elif script.lab == 3:
+        #     function_points = function_points - pattern_css
+        # elif script.lab == 4:
+        #     function_points = function_points - vlsi_css
+        # elif script.lab == 5:
+        #     function_points = function_points - dld_css
+        # elif script.lab == 6:
+        #     function_points = function_points - speech_css
+        # else:
+        #     function_points = 0
     elif lang == "c":
         function_points = sloc / c_sloc_fp
     elif lang == "cpp":
