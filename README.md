@@ -32,18 +32,18 @@ sudo apt install python3-pip
 
 	RUN to Clone a repo for the first time
 
-	```
-	./codeit.sh github_handle that_handles's_project_number
+```
+./codeit.sh github_handle that_handles's_project_number
 
-	Eg. ./codeit.sh Paryul10 2
-	Since 2 was computer-graphics lab
-	```
+Eg. ./codeit.sh Paryul10 2
+Since 2 was computer-graphics lab
+```
 
 	IF You already have that handle's Repo then do
-	```
-	./pull.sh github_handle commit_id
-	```
+```
+./pull.sh github_handle commit_id
+```
 
 	Resets the current repo to the commit_id and also calcuates the equivalent effort in hours for the code present in the SRIP/Codes directory.
-	
+
 
