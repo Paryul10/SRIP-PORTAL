@@ -8,13 +8,13 @@ from .forms import IssueForm, ReportForm, HandleForm
 
 # Create your views here.'
 
-def calculate(current_user):
 
+## Calculates the latest function points and the equivalent effort. It is called only when a user clicks on View Performance.
+def calculate(current_user):
     div_fac = 27
     mul_fac = 3
     j = 0.45
     power = mul_fac * j
-
     issue_points_info = LoggedIssue.objects.filter(username=current_user)
     len_com = len(issue_points_info)
     if len_com >=1:
@@ -30,6 +30,7 @@ def calculate(current_user):
 
     user_display_info.save()
 
+## Home Page
 def index(request):
     if request.user.is_authenticated:
         current_user = request.user
@@ -38,13 +39,13 @@ def index(request):
     else:
         return render(request, 'portalapp/index.html')
 
-
+## Useless code
 def displayusers(request):
     students = User.objects.all()
     context = {'students': students}
     return render(request, 'portalapp/user.html', context)
 
-
+## Displays points of a user. 
 def displaypoints(request, username):
     current_user = request.user
     calculate(current_user)
@@ -60,7 +61,7 @@ def displaypoints(request, username):
 def passwordreset(request):
     return render(request, 'registration/passwordreset.html')
 
-
+## OPens page to accept a commit id and url of the issue.
 def logissue(request):
     # if this is a POST request we need to process the form data
     if request.method == 'POST':
@@ -87,6 +88,7 @@ def logissue(request):
         return render(request, 'portalapp/logissue.html', {'form': form})
 
 
+## Form for weekly report
 def report(request):
 
     if request.method == 'POST':
@@ -105,7 +107,7 @@ def report(request):
         form = ReportForm()
         return render(request, 'portalapp/report.html', {'form': form})
 
-
+## Github handle Uploading. The button vanishes after handle is uploaded once.
 def uploadhandle(request):
 
     if request.method == 'POST':

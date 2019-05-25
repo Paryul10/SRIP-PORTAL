@@ -8,16 +8,11 @@ from .models import Student, LoggedIssue
 class StudentAdmin(admin.ModelAdmin):
     list_display = ['user' , 'function_points' , 'effort', 'handle', 'mentor','report' , 'batch']
 
-    # def filter_by_mentors(modeladmin,request,queryset):
-    #     for students in queryset:
-
-
 admin.site.register(Student,StudentAdmin)
 
 
 class IssueAdmin(admin.ModelAdmin):
     list_display = ['username', 'commit_id',
                     'url', 'issue_points', 'mentor','handle' ,'toc', 'is_added']
-
 
 admin.site.register(LoggedIssue, IssueAdmin)

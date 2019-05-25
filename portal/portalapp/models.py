@@ -5,6 +5,7 @@ from django.contrib.auth.models import User
 from datetime import datetime
 from django.utils.timezone import make_aware
 
+## Inherits the inbuilt user model.
 class Student(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     function_points = models.FloatField(default=0)
@@ -16,6 +17,7 @@ class Student(models.Model):
 
     def __str__(self):
         return self.user.username 
+
 
 class LoggedIssue(models.Model):
     username = models.CharField(max_length=50)
