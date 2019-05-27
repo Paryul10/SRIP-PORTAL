@@ -15,12 +15,21 @@ def calculate(current_user):
     mul_fac = 3
     j = 0.45
     power = mul_fac * j
+
     issue_points_info = LoggedIssue.objects.filter(username=current_user)
     len_com = len(issue_points_info)
     if len_com >=1:
-        total = issue_points_info[len_com-1].issue_points
+        i = len_com - 1
+        while i>=0:
+            if issue_points_info[i].is_added == True:
+                total = issue_points_info[i].issue_points
+                break
+            else:
+                total = 0
+            i -= 1
     else:
         total = 0
+        
     user_display_info = Student.objects.get(user=current_user)
     user_display_info.function_points = total
 
