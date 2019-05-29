@@ -28,6 +28,7 @@ class LoggedIssue(models.Model):
     handle = models.CharField(max_length=25,blank=True,null=True,unique=False)
     toc = models.DateTimeField(default=datetime.now)        ## time of creation
     is_added = models.BooleanField(default=False)
+    remark = models.CharField(default="-",max_length=1000,unique=False)
 
     def __str__(self):
         return self.commit_id

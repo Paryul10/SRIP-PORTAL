@@ -61,6 +61,11 @@ def displaypoints(request, username):
     info = Student.objects.get(user=current_user)
     issue_info = LoggedIssue.objects.filter(username=current_user)
 
+    length = len(issue_info)
+    for i in range(length):
+        print(issue_info[i].remark)
+
+
     if issue_info.exists():
         return render(request, 'portalapp/points.html', {'info': info, 'issue_info': issue_info})
     else:
