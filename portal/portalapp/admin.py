@@ -13,6 +13,6 @@ admin.site.register(Student,StudentAdmin)
 
 class IssueAdmin(admin.ModelAdmin):
     list_display = ['username', 'commit_id',
-                    'url', 'issue_points', 'mentor','handle' ,'toc', 'is_added']
+                    'url', 'issue_points', 'mentor','handle' ,'toc', 'remark', 'is_added']
 
 admin.site.register(LoggedIssue, IssueAdmin)

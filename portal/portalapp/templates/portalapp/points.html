@@ -26,6 +26,7 @@
                     <th>Points</th>
                     <th>Time of Submission</th>
                     <th>Evaluated</th>
+                    <th>Remarks</th>
                 </tr>
                 {% for i in issue_info %}
                 <tr>
@@ -38,6 +39,7 @@
                     {% else %}
                     <td>No</td>
                     {% endif %}
+                    <td> {{ i.remark }}</td>
                 </tr>
                 {% endfor %}
             </table>
