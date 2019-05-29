@@ -28,6 +28,18 @@ then
 elif [ "$var" == 6 ]
 then
     repo="speech-signal-processing-iiith"
+elif [ "$var" == 8 ]
+then
+    repo="image-processing-iiith"
+elif [ "$var" == 9 ]
+then
+    repo="hydraulic=and-fluid-mechanics-iiith"
+elif [ "$var" == 15 ] 
+then
+    repo="circular-dichronism-spectroscopy-iiith"
+elif [ "$var" == 16 ] 
+then
+    repo="physical-chemistry-iiith"
 else
     echo "No repo Matching.! Please check inputs"
 fi
