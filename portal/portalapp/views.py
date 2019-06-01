@@ -18,25 +18,35 @@ def calculate(current_user):
 
     issue_points_info = LoggedIssue.objects.filter(username=current_user)
     len_com = len(issue_points_info)
+
+    ## Each issue points are update according to the total sum of html, css , js
+    for i in range(len_com):
+        issue_points_info[i].issue_points = issue_points_info[i].html_ip + issue_points_info[i].css_ip + issue_points_info[i].js_ip
+        issue_points_info[i].save()
+
+    index = len_com - 1
     if len_com >=1:
         i = len_com - 1
         while i>=0:
             if issue_points_info[i].is_added == True:
                 total = issue_points_info[i].issue_points
+                index = i
                 break
             else:
+                index = i
                 total = 0
             i -= 1
     else:
         total = 0
         
     user_display_info = Student.objects.get(user=current_user)
-    user_display_info.function_points = total
+    user_display_info.function_points = issue_points_info[index].html_ip + issue_points_info[index].css_ip + issue_points_info[index].js_ip
 
-    man_months = total ** power 
-    man_months = man_months / 27
-    user_display_info.effort = man_months * 160
+    html_mh = ((((issue_points_info[index].html_ip) ** power) * 160)/27)
+    css_mh = ((((issue_points_info[index].css_ip) ** power) * 160)/27)
+    js_mh = ((((issue_points_info[index].js_ip) ** power) * 160)/27)
 
+    user_display_info.effort = html_mh + css_mh + js_mh
     user_display_info.save()
 
 ## Home Page
