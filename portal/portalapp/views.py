@@ -58,7 +58,7 @@ def index(request):
     else:
         return render(request, 'portalapp/index.html')
 
-## Useless code
+## My part code
 def displayusers(request):
     students = User.objects.all()
     context = {'students': students}
@@ -72,8 +72,8 @@ def displaypoints(request, username):
     issue_info = LoggedIssue.objects.filter(username=current_user)
 
     length = len(issue_info)
-    for i in range(length):
-        print(issue_info[i].remark)
+    # for i in range(length):
+    #     print(issue_info[i].remark)
 
 
     if issue_info.exists():
