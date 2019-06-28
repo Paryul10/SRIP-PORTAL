@@ -8,7 +8,6 @@ from .forms import IssueForm, ReportForm, HandleForm
 
 # Create your views here.'
 
-
 ## Calculates the latest function points and the equivalent effort. It is called only when a user clicks on View Performance.
 def calculate(current_user):
     div_fac = 27

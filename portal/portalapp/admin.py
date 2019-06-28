@@ -6,13 +6,15 @@ from .models import Student, LoggedIssue
 
 
 class StudentAdmin(admin.ModelAdmin):
-    list_display = ['user' , 'function_points' , 'effort', 'handle', 'mentor','report' , 'batch']
+    list_display = ['id' , 'user' ,'name' , 'function_points' , 'effort', 'handle', 'mentor','report' , 'batch']
 
 admin.site.register(Student,StudentAdmin)
 
 
 class IssueAdmin(admin.ModelAdmin):
     list_display = ['username', 'commit_id',
-                    'url', 'issue_points', 'mentor','handle' ,'toc', 'remark', 'is_added']
+                     'issue_points', 'mentor','handle' ,'toc', 'remark', 'is_added']
+    
+    list_filter = ('mentor','is_added')
 
 admin.site.register(LoggedIssue, IssueAdmin)

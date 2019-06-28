@@ -19,7 +19,7 @@
     </div>
     {% if user.is_authenticated %}
     <div class="container-fluid" style="background-color:cadetblue ; padding: 10px;">
-      <h4 style="color: black;"><i>Hi {{ user.username }}!</i></h4>
+      <h4 style="color: black;"><i>Hi {{ info.name }}!</i></h4>
       {% if info.handle|length > 1 %}        
         <p> Git Hub Handle : {{ info.handle }} </p>
       {% else %}
